@@ -1,0 +1,25 @@
+.navigation {
+
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+
+  .logo {
+    cursor: pointer;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__left {
+    flex: 1;
+  }
+
+  &__right {
+    font-size: 2rem;
+
+    a:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+}

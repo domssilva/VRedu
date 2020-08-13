@@ -1,0 +1,57 @@
+// variables
+$bg: #111;
+$title: #9805c5;
+$title-light: #b510e7;
+$title-dark: #770899;
+
+// reset
+
+a {
+  text-decoration: none;
+  color: $title;
+
+  &:hover {
+    color: $title-light;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+// basic presets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 61.5%;
+}
+
+body {
+  background: $bg;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.logo {
+  color: $title;
+}

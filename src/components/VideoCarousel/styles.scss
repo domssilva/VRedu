@@ -1,0 +1,17 @@
+.carousel {
+
+  p.carousel-status {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.category__row {
+  display: flex;
+}
+
+li.slide.selected {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
