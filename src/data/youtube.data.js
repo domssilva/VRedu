@@ -1,34 +1,46 @@
-const videos = [
+const categories = [
   {
     id: 0,
-    category: "educational",
-    categoryDescription: "",
-    url: ["f-vUixm-YlQ"],
+    name: "lectures",
+    description: "",
+    urls: ["f-vUixm-YlQ"],
   },
   {
     id: 1,
-    category: "career",
-    categoryDescription: "",
-    url: ["-jF4K4w14Ak", "4uiHO3XNcj4"],
+    name: "career",
+    description: "",
+    urls: ["-jF4K4w14Ak", "4uiHO3XNcj4", "zYVUndP37kA", "NqswOcwJBFE", "-m1dsjquP9U"],
   },
   {
     id: 2,
-    category: "computer graphics",
-    categoryDescription: "",
-    url: ["QyjyWUrHsFc"],
+    name: "math and physics foundations",
+    description: "",
+    urls: ["DPfxjQ6sqrc", "yg6h4XQqPNQ", "GpsKrAipXm8", "1r7vCzJUoiM", "SHinxAhv1ZE", "7_nKOET6zwI"],
   },
   {
     id: 3,
-    category: "development",
-    categoryDescription: "",
-    url: ["gGYtahQjmWQ", "9tjYz6Ab0oc", "CE9VOZivb3I", "sKQOlqNe_WY"],
+    name: "computer graphics",
+    description: "",
+    urls: ["QyjyWUrHsFc", "A9HrXzD04xI"],
   },
   {
     id: 4,
-    category: "tech",
-    categoryDescription: "Interesting technology in development with the potential to enhance VR",
-    url: ["ulzOE5gfzk4"],
+    name: "tech",
+    description: "Interesting technology in development with the potential to enhance VR",
+    urls: ["ulzOE5gfzk4"],
+  },
+  {
+    id: 5,
+    name: "Art",
+    description: "",
+    urls: ["OVbIOHAI3iY", "nIw5Ug1upz4", "cS_03N-e1h4", "4vAqPaFv8QA"],
+  },
+  {
+    id: 6,
+    name: "development",
+    description: "",
+    urls: ["afodIcU_vK4", "rbqjQmP0aVs", ""],
   },
 ];
 
-export default videos;
+export default categories;

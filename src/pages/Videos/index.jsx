@@ -1,7 +1,8 @@
 import React from 'react';
 
 import VideoCarousel from '../../components/VideoCarousel';
-import videos from '../../data/youtube.data';
+
+import categories from '../../data/youtube.data';
 import './styles.scss';
 
 const Home = () => {
@@ -15,12 +16,12 @@ const Home = () => {
 
       <section className="category">
         {
-          videos.map(element => (
-            <>
-              <h2 className="category__title">{element.category}</h2>
-              <p>{element.categoryDescription}</p>
-              <VideoCarousel key={element.id} element={element}/>
-            </>
+          categories.map(category => (
+            <section className="category" key={`${category.id}-${category.urls}`}>
+              <h2 className="category__title">{category.name}</h2>
+              <p>{category.description}</p>
+              <VideoCarousel category={category}/>
+            </section>
           ))
         }
       </section>

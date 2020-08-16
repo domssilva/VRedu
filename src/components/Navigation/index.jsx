@@ -10,8 +10,7 @@ export default function Navigation() {
       </div>
       <div className='navigation__right'>
         <a href='/videos'>Videos</a>
-        <a href='/playlists'>Playlists</a>
-        <a href='/resources'>Free Resources</a>
+        <a href='/resources'>Resources</a>
       </div>
     </nav>
   )

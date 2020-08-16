@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Navigation from './components/Navigation';
-import Home from './pages/Home';
+import Videos from './pages/Videos';
 
 function App() {
   return (
     <>
       <Navigation/>
-      <Home/>
+      <Videos/>
     </>
   );
 }

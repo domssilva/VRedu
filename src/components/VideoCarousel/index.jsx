@@ -1,23 +1,33 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+
 import YoutubeVideo from '../../components/YoutubeVideo';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import './styles.scss';
 
-const VideoCarousel = ({element}) => {
+const VideoCarousel = ({category}) => {
+
   return (
-    <Carousel showArrows={true} showThumbs={false}>
-      <div key={element.id} className="category__row">
+        <Splide 
+          className="category__row"
+          options={{
+            rewind : false,
+            perPage : 3,
+            pagination: false,
+            width : '100%',
+            gap : '0.5rem',
+            type: 'slide',
+          }}
+        >
           {
-            element.url.map(videoid => (
-              <div>
-                <YoutubeVideo key={element.id} title={element.category} videoid={videoid}/>
-              </div>
+            category.urls.map(videoid => (
+              <SplideSlide>
+                <YoutubeVideo key={videoid} title={category.name} videoid={videoid}/>
+              </SplideSlide>
             ))
           }
-        </div>
-      </Carousel>
+        </Splide>
   )
 }
 

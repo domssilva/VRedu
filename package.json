@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@splidejs/react-splide": "^0.4.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-responsive-carousel": "^3.2.9",
+    "react-images": "^1.1.7",
     "react-scripts": "3.4.3"
   },
   "scripts": {
