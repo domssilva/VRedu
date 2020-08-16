@@ -14,7 +14,10 @@ const VideoCarousel = ({category}) => {
           options={{
             rewind : false,
             perPage : 3,
+            perMove: 1,
             pagination: false,
+            lazyload: true,
+            keyboard: 'focused',
             width : '100%',
             gap : '0.5rem',
             type: 'slide',
