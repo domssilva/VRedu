@@ -1,17 +1,19 @@
 // variables
-$bg: #111;
-$title: #9805c5;
-$title-light: #b510e7;
-$title-dark: #770899;
+$black: #111;
+$red: #D80032;
+$orange: #EF233C;
+$white: #EDF2F4;
+$grey: #8D99AE;
+$blue: #2B2D42;
 
 // reset
 
 a {
   text-decoration: none;
-  color: $title;
+  color: $red;
 
   &:hover {
-    color: $title-light;
+    color: $orange;
   }
 }
 
@@ -37,7 +39,7 @@ html {
 }
 
 body {
-  background: $bg;
+  background: $blue;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -53,5 +55,5 @@ code {
 
 
 .logo {
-  color: $title;
+  color: $red;
 }

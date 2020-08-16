@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <nav role='navigation' tabIndex='0' className='navigation'>
       <div className='navigation__left'>
-        <a href='/' className='logo'>VR-flix</a>
+        <a href='/' className='logo'>VR-edu</a>
       </div>
       <div className='navigation__right'>
         <a href='/videos'>Videos</a>

@@ -19,7 +19,7 @@ const VideoCarousel = ({category}) => {
             lazyload: true,
             keyboard: 'focused',
             width : '100%',
-            gap : '0.5rem',
+            gap : '1.5rem',
             type: 'slide',
           }}
         >

@@ -1,13 +1,47 @@
+// variables
+$black: #111;
+$red: #D80032;
+$orange: #EF233C;
+$white: #EDF2F4;
+$grey: #8D99AE;
+$blue: #2B2D42;
+$radius: 10px;
+
 .container {
-  color: whitesmoke;
+  color: $white;
   padding: 2rem 4rem;
 }
 
 .category {
-  &__title {
-    text-transform: uppercase;
-    font-size: 2rem;
+  &__description {
+    background: $orange;
+    font-size: 1.3rem;
     letter-spacing: .5px;
-    margin: 3rem 0 1.4rem 0;
+    margin: 3rem 0 0 0;
+    padding: 1rem 2rem;
+    color: $black;
+    border-top-right-radius: $radius;
+    border-top-left-radius: $radius;
+
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: $white;
+    }
+    
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: black;
+      letter-spacing: 0.3rem;
+    }
   }
+
+  &__row {
+    padding: 3rem 8rem;
+    background: $white;
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+  
 }

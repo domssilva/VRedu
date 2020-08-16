@@ -18,8 +18,10 @@ const Home = () => {
         {
           categories.map(category => (
             <section className="category" key={`${category.id}-${category.urls}`}>
-              <h2 className="category__title">{category.name}</h2>
-              <p>{category.description}</p>
+              <section className="category__description">
+                <h2>{category.name}</h2>
+                <p>{category.description}</p>
+              </section>
               <VideoCarousel category={category}/>
             </section>
           ))
