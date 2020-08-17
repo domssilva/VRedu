@@ -24,9 +24,9 @@ const VideoCarousel = ({category}) => {
           }}
         >
           {
-            category.urls.map(videoid => (
+            category.videos.map(video => (
               <SplideSlide>
-                <YoutubeVideo key={videoid} title={category.name} videoid={videoid}/>
+                <YoutubeVideo key={video.id} title={category.name} videoid={video.id}/>
               </SplideSlide>
             ))
           }

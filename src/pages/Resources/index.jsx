@@ -142,6 +142,16 @@ const Resources = () => {
                 <a href='http://voicesofvr.com/' target='_blank' rel='noopener noreferrer'>voiceosofvr</a>
                 </td>
               </tr>
+              <tr>
+                <td>
+                <a href='https://www.youtube.com/channel/UCD_Hu0Hnf7lFyPzeYgy12jQ' target='_blank' rel='noopener noreferrer'>FReality</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <a href='https://www.thevrara.com/podcast' target='_blank' rel='noopener noreferrer'>Everything VR &amp; AR</a>
+                </td>
+              </tr>
             </TableCol>
           </div>
         </div>
@@ -149,7 +159,7 @@ const Resources = () => {
         <div className="container__row">
           <h3 className="container__row-title" id="documents">free documents</h3>
           <div className="container__row-tables">
-            <TableCol title='books'>
+            <TableCol title="books &amp; pdf's">
               <tr>
                 <td>
                   <a href='https://ec.europa.eu/futurium/en/system/files/ged/vr_ecosystem_eu_report_0.pdf' target='_blank' rel='noopener noreferrer'>European VR's ecosystem report</a>
@@ -165,62 +175,9 @@ const Resources = () => {
                   <a href='http://www.morganclaypoolpublishers.com/catalog_Orig/samples/9781970001136_sample.pdf' target='_blank' rel='noopener noreferrer'>The VR book - Jason Jerald</a>
                 </td>
               </tr>
-            </TableCol>
-          </div>
-        </div>
-      
-        <div className="container__row">
-          <h3 className="container__row-title" id="communities">communities</h3>
-          <div className="container__row-tables">
-            <TableCol title='discord'>
-                {
-                  discords.map(server => (
-                    <tr>
-                      <td>
-                        <a href={server.invite} target='_blank' rel='noopener noreferrer'>
-                          {server.name}
-                          <discordIcon/>
-                        </a>
-                      </td>
-                    </tr>
-                  ))
-                }
-            </TableCol>
-            <TableCol title='category'>
-                {
-                  discords.map(server => (
-                    <tr>
-                      <td>
-                        <span>{server.category}</span>
-                      </td>
-                    </tr>
-                  ))
-                }
-            </TableCol>
-            <TableCol title='reddit'>
               <tr>
                 <td>
-                  <a href='https://www.reddit.com/r/learnVRdev/' target='_blank' rel='noopener noreferrer'>r/learnVRdev</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
+                  <a href='https://epicgames.ent.box.com/s/n12ixy53l8cknz73npimsr54frkvm72c' target='_blank' rel='noopener noreferrer'>Creator's Field guide to emerging careers in interactive 3D</a>
                 </td>
               </tr>
             </TableCol>
@@ -293,6 +250,64 @@ const Resources = () => {
               <tr>
                 <td>
                  <a href='https://realitylab.uw.edu/components/lectures.html' target='_blank' rel='noopener noreferrer'>Reality lab lectures</a>
+                </td>
+              </tr>
+            </TableCol>
+          </div>
+        </div>
+
+        <div className="container__row">
+          <h3 className="container__row-title" id="communities">communities</h3>
+          <div className="container__row-tables">
+            <TableCol title='discord'>
+                {
+                  discords.map(server => (
+                    <tr>
+                      <td>
+                        <a href={server.invite} target='_blank' rel='noopener noreferrer'>
+                          {server.name}
+                          <discordIcon/>
+                        </a>
+                      </td>
+                    </tr>
+                  ))
+                }
+            </TableCol>
+            <TableCol title='category'>
+                {
+                  discords.map(server => (
+                    <tr>
+                      <td>
+                        <span>{server.category}</span>
+                      </td>
+                    </tr>
+                  ))
+                }
+            </TableCol>
+            <TableCol title='reddit'>
+              <tr>
+                <td>
+                  <a href='https://www.reddit.com/r/learnVRdev/' target='_blank' rel='noopener noreferrer'>r/learnVRdev</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &nbsp;
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  &nbsp;
                 </td>
               </tr>
             </TableCol>

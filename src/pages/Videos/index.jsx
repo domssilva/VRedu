@@ -12,7 +12,6 @@ const Home = () => {
 
       <article className="intro">
         <div className="intro__filters">
-          <p>Completely new to VR? pick the <strong>introductory</strong> filter to check all the videos explaining the basic concepts of virtual reality.</p>
           <h3>Filters:</h3>
           <ul>
             <li>introductory</li>
