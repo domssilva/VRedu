@@ -1,0 +1,30 @@
+// variables
+$black: #111;
+$red: #D80032;
+$orange: #EF233C;
+$white: #EDF2F4;
+$grey: #8D99AE;
+$blue: #2B2D42;
+
+table,
+th, 
+td {
+  border: 1px solid rgba($black, .4);
+}
+
+table {
+  color: $black;
+  min-width: 230px; 
+  background: $white;
+  border-collapse: collapse;
+  box-shadow: 0 1rem 1rem rgba($black, .2);
+}
+
+td, th {
+  padding: 1rem 2rem;
+}
+
+th {
+  text-transform: capitalize;
+  color: darken($blue, 8%);
+}

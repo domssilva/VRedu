@@ -10,14 +10,26 @@ $radius: 10px;
 .container {
   color: $white;
   padding: 2rem 4rem;
+} 
+
+.intro {
+  padding: 0 2rem;
+  margin: 5rem 0 10rem 0;
+}
+
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 .category {
+
   &__description {
     background: $orange;
     font-size: 1.3rem;
     letter-spacing: .5px;
-    margin: 3rem 0 0 0;
     padding: 1rem 2rem;
     color: $black;
     border-top-right-radius: $radius;
