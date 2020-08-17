@@ -8,11 +8,21 @@ $blue: #2B2D42;
 
 .container {
   
-  margin-top: 2rem;
-  padding: 3rem 0;
-  background-color: darken($blue, 2%);
+  margin-top: 4rem;
+  padding: 0;
   
   &__row {
+
+    padding: 3rem 0;
+    min-height: 250px;
+
+    &:nth-child(odd) {
+      background-color: darken($blue, 2%);
+    }
+
+    &:nth-child(even) {
+      background-color: $blue;
+    }
 
     &-title {
       color: $white;
@@ -27,4 +37,33 @@ $blue: #2B2D42;
       justify-content: center;
     }
   }
+}
+
+small {
+  display: block;
+  text-align: center;
+}
+
+.mt {
+  margin-top: 5rem;
+}
+
+.index {
+  text-align: center;
+  background-color: $white;
+  padding: 2rem;
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+}
+
+small {
+  margin: 2rem 0;
 }
