@@ -1,9 +1,9 @@
 import React from 'react';
 
 import discords from '../../data/discords.data';
-import {ReactComponent as discordIcon} from '../../media/discord-icon.svg';
 
 import TableCol from '../../components/TableCol';
+import TableRow from '../../components/TableRow';
 import './styles.scss';
 
 const Resources = () => {
@@ -34,91 +34,31 @@ const Resources = () => {
           <h3 className="container__row-title" id="development">development</h3>
           <div className='container__row-tables'>
             <TableCol title='Game Engine'>
-              <tr>
-                <td>
-                  <span>Unreal Engine</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Unity</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Godot</span>
-                </td>
-              </tr>
+              <TableRow type='text' text='Unreal Engine'/>  
+              <TableRow type='text' text='Unity'/>  
+              <TableRow type='text' text='Godot'/>  
             </TableCol>
             <TableCol title='Main Language'>
-              <tr>
-                <td>
-                  <a href='https://en.wikipedia.org/wiki/C%2B%2B' target='_blank' rel='noopener noreferrer'>C++</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' target='_blank' rel='noopener noreferrer'>C#</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_advanced.html' target='_blank' rel='noopener noreferrer'>GDScript</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='https://en.wikipedia.org/wiki/C%2B%2B' text='C++'/>
+              <TableRow type='link' link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' text='C#'/>
+              <TableRow type='link' link='https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_advanced.html' text='GDScript'/>
             </TableCol>
             <TableCol title='Documentation'>
-              <tr>
-                <td>
-                  <a href='https://docs.unrealengine.com/en-US/index.html' target='_blank' rel='noopener noreferrer'>index</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://docs.unity3d.com/Manual/index.html' target='_blank' rel='noopener noreferrer'>index</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://docs.godotengine.org/en/stable/index.html' target='_blank' rel='noopener noreferrer'>index</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='https://docs.unrealengine.com/en-US/index.html' text='index'/>
+              <TableRow type='link' link='https://docs.unity3d.com/Manual/index.html' text='index'/>
+              <TableRow type='link' link='https://docs.godotengine.org/en/stable/index.html' text='index'/>
             </TableCol>
           </div>          
           <div className='container__row-tables mt'>
           <TableCol title='Introductory Youtube Playlists'>
-              <tr>
-                <td>
-                <a href='https://www.youtube.com/playlist?list=PLHSMxXn4v-aGhuRxxSBVPqykMjDiRyGrJ' target='_blank' rel='noopener noreferrer'>Unreal Engine 4</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6' target='_blank' rel='noopener noreferrer'>Unity3d</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://www.youtube.com/playlist?list=PLsk-HSGFjnaFwmOFrfD4gQQqvgvEUielY' target='_blank' rel='noopener noreferrer'>Godot3</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLHSMxXn4v-aGhuRxxSBVPqykMjDiRyGrJ' text='Unreal Engine 4'/>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6' text='Unity3d'/>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLsk-HSGFjnaFwmOFrfD4gQQqvgvEUielY' text='Godot3'/>
             </TableCol>
           <TableCol title='VR Playlists'>
-              <tr>
-                <td>
-                <a href='https://www.youtube.com/playlist?list=PLZlv_N0_O1gZaB0IgQEnO9WOXYRx3Puvo' target='_blank' rel='noopener noreferrer'>AR &amp; VR Unreal Engine</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://www.youtube.com/playlist?list=PLrk7hDwk64-a_gf7mBBduQb3PEBYnG4fU' target='_blank' rel='noopener noreferrer'>Unity XR toolkit</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://www.youtube.com/playlist?list=PLe63S5Eft1KYGqgkx9I70vfWmvvOZ7apF' target='_blank' rel='noopener noreferrer'>Godot Desktop VR tutorials</a>
-                </td>
-              </tr>
+            <TableRow type='link' link='https://www.youtube.com/playlist?list=PLZlv_N0_O1gZaB0IgQEnO9WOXYRx3Puvo' text='AR &amp; VR Unreal Engine'/>
+            <TableRow type='link' link='https://www.youtube.com/playlist?list=PLrk7hDwk64-a_gf7mBBduQb3PEBYnG4fU' text='Unity XR toolkit'/>
+            <TableRow type='link' link='https://www.youtube.com/playlist?list=PLe63S5Eft1KYGqgkx9I70vfWmvvOZ7apF' text='Godot Desktop VR tutorials'/>
             </TableCol>
           </div>          
         </div>
@@ -127,31 +67,11 @@ const Resources = () => {
           <h3 className="container__row-title" id="podcasts">podcasts</h3>
           <div className="container__row-tables">
             <TableCol title='podcasts'>
-              <tr>
-                <td>
-                  <a href='http://www.revvrstudios.com/' target='_blank' rel='noopener noreferrer'>revvrstudios</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://vrscout.com/podcast/' target='_blank' rel='noopener noreferrer'>vrscout</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='http://voicesofvr.com/' target='_blank' rel='noopener noreferrer'>voiceosofvr</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://www.youtube.com/channel/UCD_Hu0Hnf7lFyPzeYgy12jQ' target='_blank' rel='noopener noreferrer'>FReality</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <a href='https://www.thevrara.com/podcast' target='_blank' rel='noopener noreferrer'>Everything VR &amp; AR</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='http://www.revvrstudios.com/' text='revvrstudios'/>
+              <TableRow type='link' link='https://vrscout.com/podcast/' text='vrscout'/>
+              <TableRow type='link' link='http://voicesofvr.com/' text='voiceosofvr'/>
+              <TableRow type='link' link='https://www.youtube.com/channel/UCD_Hu0Hnf7lFyPzeYgy12jQ' text='FReality'/>
+              <TableRow type='link' link='https://www.thevrara.com/podcast' text='Everything VR &amp; AR'/>
             </TableCol>
           </div>
         </div>
@@ -160,26 +80,9 @@ const Resources = () => {
           <h3 className="container__row-title" id="documents">free documents</h3>
           <div className="container__row-tables">
             <TableCol title="books &amp; pdf's">
-              <tr>
-                <td>
-                  <a href='https://ec.europa.eu/futurium/en/system/files/ged/vr_ecosystem_eu_report_0.pdf' target='_blank' rel='noopener noreferrer'>European VR's ecosystem report</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='http://vr.cs.uiuc.edu/vrbook.pdf' target='_blank' rel='noopener noreferrer'>Virtual Reality - Steven M. LaValle</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='http://www.morganclaypoolpublishers.com/catalog_Orig/samples/9781970001136_sample.pdf' target='_blank' rel='noopener noreferrer'>The VR book - Jason Jerald</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://epicgames.ent.box.com/s/n12ixy53l8cknz73npimsr54frkvm72c' target='_blank' rel='noopener noreferrer'>Creator's Field guide to emerging careers in interactive 3D</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='https://ec.europa.eu/futurium/en/system/files/ged/vr_ecosystem_eu_report_0.pdf' text="European VR's ecosystem report"/>
+              <TableRow type='link' link='http://vr.cs.uiuc.edu/vrbook.pdf' text='Virtual Reality - Steven M. LaValle'/>
+              <TableRow type='link' link='https://epicgames.ent.box.com/s/n12ixy53l8cknz73npimsr54frkvm72c' text="Creator's Field guide to emerging careers in interactive 3D"/>
             </TableCol>
           </div>
         </div>
@@ -188,70 +91,22 @@ const Resources = () => {
           <h3 className="container__row-title" id="lectures">lectures</h3>
           <div className="container__row-tables">
             <TableCol title='Youtube Playlist'>
-              <tr>
-                <td>
-                  <a href='https://www.youtube.com/playlist?list=PLbMVogVj5nJSyt80VRXYC-YrAvQuUb6dh' target='_blank' rel='noopener noreferrer'>Virtual Reality by Prof Steven LaValle</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://www.youtube.com/playlist?list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g' target='_blank' rel='noopener noreferrer'>Computer Graphics</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://www.youtube.com/playlist?list=PLWKjhJtqVAbluXJKKbCIb4xd7fcRkpzoz' target='_blank' rel='noopener noreferrer'>CS50 Introduction to game development</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://www.youtube.com/playlist?list=PL8bmgwX9eBPGUZXoy3SVplvJMiHkzP8T_' target='_blank' rel='noopener noreferrer'>Research and Talks about VR and MR</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLbMVogVj5nJSyt80VRXYC-YrAvQuUb6dh' text='Virtual Reality by Prof Steven LaValle'/>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g' text='Computer Graphics'/>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLWKjhJtqVAbluXJKKbCIb4xd7fcRkpzoz' text='CS50 Introduction to game development'/>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PL8bmgwX9eBPGUZXoy3SVplvJMiHkzP8T_' text='Research and Talks about VR and MR'/>
             </TableCol>
             <TableCol title='Institute'>
-              <tr>
-                <td>
-                  <span>IITM &amp; UIUC</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>UC Davis</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Harvard</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>UW Reality Lab</span>
-                </td>
-              </tr>
+              <TableRow type='text' text='IITM &amp; UIUC'/>
+              <TableRow type='text' text='UC Davis'/>
+              <TableRow type='text' text='Harvard'/>
+              <TableRow type='text' text='UW Reality Lab'/>
             </TableCol>
             <TableCol title='website'>
-              <tr>
-                <td>
-                  <a href='https://nptel.ac.in/content/syllabus_pdf/106106138.pdf' target='_blank' rel='noopener noreferrer'>Syllabus</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://www.cs.ucdavis.edu/~ma/ECS175/syllabus.html' target='_blank' rel='noopener noreferrer'>Syllabus</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href='https://cs50.harvard.edu/games/2018/' target='_blank' rel='noopener noreferrer'>cs50 opencourse</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                 <a href='https://realitylab.uw.edu/components/lectures.html' target='_blank' rel='noopener noreferrer'>Reality lab lectures</a>
-                </td>
-              </tr>
+              <TableRow type='link' link='https://nptel.ac.in/content/syllabus_pdf/106106138.pdf' text='Syllabus'/>
+              <TableRow type='link' link='https://www.cs.ucdavis.edu/~ma/ECS175/syllabus.html' text='Syllabus'/>
+              <TableRow type='link' link='https://cs50.harvard.edu/games/2018/' text='cs50 opencourse'/>
+              <TableRow type='link' link='https://realitylab.uw.edu/components/lectures.html' text='Reality lab lectures'/>
             </TableCol>
           </div>
         </div>
@@ -261,16 +116,7 @@ const Resources = () => {
           <div className="container__row-tables">
             <TableCol title='discord'>
                 {
-                  discords.map(server => (
-                    <tr>
-                      <td>
-                        <a href={server.invite} target='_blank' rel='noopener noreferrer'>
-                          {server.name}
-                          <discordIcon/>
-                        </a>
-                      </td>
-                    </tr>
-                  ))
+                  discords.map(server => <TableRow type='link' link={server.invite} text={server.name}/>)
                 }
             </TableCol>
             <TableCol title='category'>
@@ -285,31 +131,11 @@ const Resources = () => {
                 }
             </TableCol>
             <TableCol title='reddit'>
-              <tr>
-                <td>
-                  <a href='https://www.reddit.com/r/learnVRdev/' target='_blank' rel='noopener noreferrer'>r/learnVRdev</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &nbsp;
-                </td>
-              </tr>
+              <TableRow type='link' link='https://www.reddit.com/r/learnVRdev/' text='r/learnVRdev'/>
+              <TableRow/>
+              <TableRow/>
+              <TableRow/>
+              <TableRow/>
             </TableCol>
           </div>
         </div>
