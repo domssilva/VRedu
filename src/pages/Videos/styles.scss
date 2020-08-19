@@ -57,3 +57,50 @@ $radius: 10px;
   }
   
 }
+
+.filter {
+
+  &__container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    width: 50rem;
+    margin: 3rem auto;
+  }
+  
+  &__btn {
+    background: $white;
+    border-radius: 5px;
+    padding: 1.5rem 3rem;
+    color: $black;
+    width: 2rem;
+    border: none;
+    outline: none;
+    display: inline-block;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+    
+    box-sizing: content-box;
+    border-left: 3rem solid $white;
+    border-right: 3rem solid $white;
+
+    &.active {
+      border-right: 3rem solid $orange;
+    }
+    
+    &:active,
+    &:hover {
+      color: black;
+      background: whitesmoke;
+      border-left: 3rem solid whitesmoke;
+      border-right: 3rem solid $orange;
+      box-shadow: 0 1rem 2rem rgba($black, .6);
+    }
+  }
+}

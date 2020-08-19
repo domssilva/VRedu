@@ -33,7 +33,7 @@ const categories = [
       },
       {
         id: "4uiHO3XNcj4",
-        tag: ["unity", ""]
+        tag: ["unity"]
       },
       {
         id: "zYVUndP37kA",
@@ -145,7 +145,7 @@ const categories = [
       },
       {
         id: "m-GV7qzhONk",
-        tag: ["hardware"],
+        tag: [],
       },
       {
         id: "E0QLVj9FJ0A",
@@ -168,15 +168,15 @@ const categories = [
     videos: [
       {
         id: "IYf-QAW27ao",
-        tag: ["hardware", "gloves"],
+        tag: [],
       },
       {
         id: "fvu5FxKuqdQ",
-        tag: ["hardware", "treadmil"],
+        tag: [],
       },
       {
         id: "mSCxcqTHgzM",
-        tag: ["hardware", "exoskeleton"],
+        tag: [],
       },
     ],
   },
@@ -187,7 +187,7 @@ const categories = [
     videos: [
       {
         id: "OVbIOHAI3iY",
-        tag: ["3D"],
+        tag: [],
       },
       {
         id: "nIw5Ug1upz4",
@@ -195,15 +195,15 @@ const categories = [
       },
       {
         id: "ouvf-4wciak",
-        tag: ["3D"],
+        tag: [],
       },
       {
         id: "cS_03N-e1h4",
-        tag: ["3D"],
+        tag: [],
       },
       {
         id: "4vAqPaFv8QA",
-        tag: ["animation"],
+        tag: [],
       },
     ],
   },
