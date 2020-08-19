@@ -1,0 +1,124 @@
+// variables
+$black: #111;
+$red: #D80032;
+$orange: #EF233C;
+$white: #EDF2F4;
+$grey: #8D99AE;
+$blue: #2B2D42;
+
+
+.home {
+  background: $white;
+
+  &__intro {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+
+    h1 {
+      padding: 2rem;
+    }
+  }
+}
+
+.article  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 5rem;
+  width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1rem rgba($black, .1);
+  
+  &:not(:last-of-type) {
+    margin-bottom: 6rem;
+  }
+
+  &__top {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    background: $white;
+  }
+
+  &__txt {
+    width: 350px;
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    margin-right: 3rem;
+    border-radius: 3px;
+    
+    &--empty {
+      background: lighten($grey, 25%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.btn {
+  background: $white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: $black;
+  width: 150px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  margin: auto;
+  margin-top: 2rem;
+
+  font-size: 1.3rem;
+  letter-spacing: .15rem;
+  text-transform: capitalize;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s linear;
+  
+  box-sizing: content-box;
+  border-left: 3rem solid $white;
+  border-right: 3rem solid $white;
+
+  box-shadow: 0 1rem 1rem rgba($black, .1);
+
+  &:hover {
+    color: black;
+    background: whitesmoke;
+    border-left: 3rem solid whitesmoke;
+    border-right: 3rem solid $orange;
+    box-shadow: 0 1rem 1rem rgba($black, .2);
+  }
+}
+
+.error {
+  position: absolute;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+
+  img {
+    display: block; 
+  }
+}
