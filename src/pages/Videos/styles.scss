@@ -55,6 +55,14 @@ $radius: 10px;
     border-bottom-right-radius: $radius;
     border-bottom-left-radius: $radius;
   }
+
+  &__results {
+    padding: 4rem;
+    background: $white;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
   
 }
 
@@ -66,24 +74,31 @@ $radius: 10px;
 
   &__container {
 
+    width: 80%;
+    margin: auto;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     align-items: center;
-    gap: 2rem;
-    width: 50rem;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
     margin: 3rem auto;
   }
   
   &__btn {
     background: $white;
     border-radius: 5px;
-    padding: 1.5rem 3rem;
+    padding: 2rem 5rem;
     color: $black;
     width: 2rem;
     border: none;
     outline: none;
     display: inline-block;
     margin: auto;
+
+    font-size: 1.9rem;
+    letter-spacing: .15rem;
+    text-transform: capitalize;
 
     display: flex;
     justify-content: center;
@@ -95,6 +110,9 @@ $radius: 10px;
     border-right: 3rem solid $white;
 
     &.active {
+      color: $black;
+      background: $grey;
+      border-left: 3rem solid $grey;
       border-right: 3rem solid $orange;
     }
     

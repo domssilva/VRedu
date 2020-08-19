@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import VideosContainer from '../../components/VideosContainer';
-import YoutubeVideo from '../../components/YoutubeVideo';
+import FilterResults from '../../components/FilterResults';
 
 import categories from '../../data/youtube.data';
 import './styles.scss';
@@ -17,7 +17,6 @@ const Home = () => {
     }
 
     setActiveFilter(filterName);
-
   }
 
   const filters = [
@@ -66,9 +65,9 @@ const Home = () => {
       <section className="category">
         {
           (activeFilter === null) ?
-          categories.map(category => (<VideosContainer category={category}/>))
+          categories.map(category => <VideosContainer category={category}/>)
           :
-          getFilteredVideos().map(id => <YoutubeVideo videoid={id}/>)
+          <FilterResults activeFilter={activeFilter} videoIds={getFilteredVideos()}/>
         }
       </section>
     </section>
