@@ -6,19 +6,19 @@ const categories = [
     videos: [
       {
         id: "rVn3H93Ysag",
-        tag: ["history"]
+        tag: "history",
       }, 
       {
         id: "_X_E_Kg9roE",
-        tag: ["history"]
+        tag: "history",
       },
       {
         id: "NCBEYaC876A",
-        tag: ["howitworks"],
+        tag: "howitworks",
       },
       {
         id: "T0taTtOgqd8",
-        tag: ["hardware"],
+        tag: "",
       }
     ],
   },
@@ -29,50 +29,50 @@ const categories = [
     videos: [
       {
         id: "-jF4K4w14Ak",
-        tag: [""],
+        tag: "",
       },
       {
         id: "4uiHO3XNcj4",
-        tag: ["unity"]
+        tag: "unity",
       },
       {
         id: "zYVUndP37kA",
-        tag: [""],
+        tag: "",
       },
       {
         id: "NqswOcwJBFE",
-        tag: [""],
+        tag: "",
       },
     ],
   },
   {
     id: 2,
-    name: "math and physics foundations",
+    name: "maths & physics foundations",
     description: "",
     videos: [
       {
         id: "DPfxjQ6sqrc",
-        tag: ["math"],
+        tag: "maths",
       },
       {
         id: "yg6h4XQqPNQ",
-        tag: ["math"],
+        tag: "maths",
       },
       {
         id: "GpsKrAipXm8",
-        tag: ["math"],
+        tag: "maths",
       },
       {
         id: "1r7vCzJUoiM",
-        tag: ["math"],
+        tag: "maths",
       },
       {
         id: "SHinxAhv1ZE",
-        tag: ["math"],
+        tag: "maths",
       },
       {
         id: "7_nKOET6zwI",
-        tag: ["physics"],
+        tag: "physics",
       },
     ],
   },
@@ -83,31 +83,31 @@ const categories = [
     videos: [
       {
         id: "QyjyWUrHsFc",
-        tag: ["history"],
+        tag: "history",
       },
       {
         id: "A9HrXzD04xI",
-        tag: ["howitworks"],
+        tag: "howitworks",
       },
       {
         id: "T-HXmQAMhG0",
-        tag: [],
+        tag: "",
       },
       {
         id: "cvcAjgMUPUA",
-        tag: ["howitworks"],
+        tag: "howitworks",
       },
       {
         id: "Z9pnmnckcFs",
-        tag: [],
+        tag: "",
       },
       {
         id: "4gyP94hsC14",
-        tag: ["howitworks"],
+        tag: "howitworks",
       },
       {
         id: "DtfEVO9Oc3U",
-        tag: [],
+        tag: "",
       },
     ],
   },
@@ -118,19 +118,19 @@ const categories = [
     videos: [
       {
         id: "DKrdLKetBZE",
-        tag: ["howitworks"],
+        tag: "howitworks",
       },
       {
         id: "afodIcU_vK4",
-        tag: ["unreal"],
+        tag: "unreal",
       },
       {
         id: "rbqjQmP0aVs",
-        tag: ["unreal"],
+        tag: "unreal",
       },
       {
         id: "tI4SiK-P7Ns",
-        tag: [],
+        tag: "",
       },
     ],
   },
@@ -141,23 +141,23 @@ const categories = [
     videos: [
       {
         id: "ulzOE5gfzk4",
-        tag: ["immersion", "neuroscience"],
+        tag: "immersion",
       },
       {
         id: "m-GV7qzhONk",
-        tag: [],
+        tag: "",
       },
       {
         id: "E0QLVj9FJ0A",
-        tag: ["xr"],
+        tag: "xr",
       },
       {
         id: "pJxZUqJqn6c",
-        tag: ["immersion"],
+        tag: "immersion",
       },
       {
         id: "lhcr2VGtYpM",
-        tag: ["consciousness"],
+        tag: "science",
       },
     ],
   },
@@ -168,15 +168,15 @@ const categories = [
     videos: [
       {
         id: "IYf-QAW27ao",
-        tag: [],
+        tag: "",
       },
       {
         id: "fvu5FxKuqdQ",
-        tag: [],
+        tag: "",
       },
       {
         id: "mSCxcqTHgzM",
-        tag: [],
+        tag: "",
       },
     ],
   },
@@ -187,23 +187,23 @@ const categories = [
     videos: [
       {
         id: "OVbIOHAI3iY",
-        tag: [],
+        tag: "",
       },
       {
         id: "nIw5Ug1upz4",
-        tag: [],
+        tag: "",
       },
       {
         id: "ouvf-4wciak",
-        tag: [],
+        tag: "",
       },
       {
         id: "cS_03N-e1h4",
-        tag: [],
+        tag: "",
       },
       {
         id: "4vAqPaFv8QA",
-        tag: [],
+        tag: "",
       },
     ],
   },

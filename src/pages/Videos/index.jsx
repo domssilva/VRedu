@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
-import VideoCarousel from '../../components/VideoCarousel';
+import VideosContainer from '../../components/VideosContainer';
+import YoutubeVideo from '../../components/YoutubeVideo';
 
 import categories from '../../data/youtube.data';
 import './styles.scss';
@@ -24,12 +25,24 @@ const Home = () => {
     'howitworks',
     'unity',
     'unreal',
-    'math',
+    'maths',
     'physics',
     'immersion',
     'science',
     'xr',
   ];
+
+  function getFilteredVideos() {
+    let filteredVideos = [];
+    categories.map(category => {
+      category.videos.map(video => {
+        if (video.tag === activeFilter) {
+          filteredVideos.push(video.id);
+        }
+      });
+    });
+    return filteredVideos;
+  }
 
   return (
     <section className="container">
@@ -48,20 +61,14 @@ const Home = () => {
             ))
           }
         </div>
-
       </article>
 
       <section className="category">
         {
-          categories.map(category => (
-            <section className="category__unit" key={category.videos[0].id}>
-              <section className="category__description">
-                <h2>{category.name}</h2>
-                <p>{category.description}</p>
-              </section>
-              <VideoCarousel category={category}/>
-            </section>
-          ))
+          (activeFilter === null) ?
+          categories.map(category => (<VideosContainer category={category}/>))
+          :
+          getFilteredVideos().map(id => <YoutubeVideo videoid={id}/>)
         }
       </section>
     </section>
