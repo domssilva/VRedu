@@ -1,9 +1,9 @@
 import React from 'react';
 
-import discords from '../../data/discords.data';
-
 import TableCol from '../../components/TableCol';
 import TableRow from '../../components/TableRow';
+import { FaDiscord } from 'react-icons/fa';
+import discords from '../../data/discords.data';
 import './styles.scss';
 
 const Resources = () => {
@@ -116,7 +116,11 @@ const Resources = () => {
           <div className="container__row-tables">
             <TableCol title='discord'>
                 {
-                  discords.map(server => <TableRow type='link' link={server.invite} text={server.name}/>)
+                  discords.map(server => (
+                    <TableRow type='svg-link' link={server.invite} text={server.name}>
+                      <FaDiscord/>
+                    </TableRow>
+                  ))
                 }
             </TableCol>
             <TableCol title='category'>
