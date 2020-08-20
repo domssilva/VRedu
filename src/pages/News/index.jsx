@@ -11,7 +11,7 @@ const News = ({ isLoading }) => {
   const [vrNews, setVrNews] = useState([]);
 
   // if true, uses dummy data from a js file
-  const development = false;
+  const development = true;
 
   const apiKey = process.env.REACT_APP_API_TOKEN;
   const url = `https://api.currentsapi.services/v1/search?keywords=Virtual%20Reality&language=en&apiKey=${apiKey}`;
@@ -36,10 +36,7 @@ const News = ({ isLoading }) => {
       </div>
       <main className="home__news">
         {
-          isLoading ? (
-            <LoadingNewsArticle/>
-          ) : 
-          vrNews.map(newsData => <NewsArticle data={newsData}/>)
+          isLoading ? <LoadingNewsArticle/> : vrNews.map(newsData => <NewsArticle data={newsData}/>)
         }
       </main>
     </section>

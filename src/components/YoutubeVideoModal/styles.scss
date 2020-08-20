@@ -1,0 +1,67 @@
+// variables
+$black: #111;
+$red: #D80032;
+$orange: #EF233C;
+$white: #EDF2F4;
+$grey: #8D99AE;
+$blue: #2B2D42;
+$block-height: 15px;
+
+.Modal {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+
+  display: flex;
+  flex-direction: column;
+
+  &__tab {
+    display: flex;
+    justify-content: flex-end;
+    height: $block-height * 2;
+    background: $blue;
+    
+  }
+
+  &__close {
+    background: $white;
+    border: none;
+    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: .5rem;
+
+    svg {
+      margin: 0;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    flex-grow: 1;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+}

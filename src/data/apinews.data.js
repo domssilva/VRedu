@@ -1,357 +1,404 @@
 const newsDummyData = [
-    {
-       author: "news",
-       category: [
-          "regional"
-       ],
-       description: "MEGHAN MARKLE fans have turned on Prince Charles following claims he does not support the Duchess of Sussex's legal action against a British newspaper....",
-       id: "4917ecdc-d30d-4624-936a-de5f86aca729",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 16:08:00 +0000",
-       title: "Meghan Markle fans turn on Prince Charles over claims he does not support Duchess' lawsuit",
-       url: "http://feedproxy.google.com/~r/daily-express-royal-news/~3/UZTYHq8fgiY/meghan-markle-news-legal-action-prince-charles-omid-scobie-finding-freedom"
-    },
-    {
-       author: "news",
-       category: [
-          "regional"
-       ],
-       description: "PRINCE HARRY has revealed a major clue over his and Meghan Markle's plans for their new home in the US....",
-       id: "6a0e841d-2af6-4ac5-94ed-0282a4f698ec",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 17:40:43 +0000",
-       title: "Prince Harry gives huge hint at plans for his and Meghan Markle's £11m new home",
-       url: "http://feedproxy.google.com/~r/daily-express-royal-news/~3/7n8Trh6DSW4/prince-harry-meghan-markle-new-home-santa-barbara-royal-news"
-    },
-    {
-       author: "news",
-       category: [
-          "regional"
-       ],
-       description: "MEGHAN MARKLE and Prince Harry could be set to separate as an expert reflected on the possibility of Harry returning to the UK....",
-       id: "9abc1573-b75a-4f7d-85ff-b193627b9752",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 16:17:00 +0000",
-       title: "Meghan Markle and Prince Harry split: Duke may be forced to return to UK over visa",
-       url: "http://feedproxy.google.com/~r/daily-express-royal-news/~3/hJCPdVyx-jA/Meghan-Markle-Prince-Harry-Duke-Duchess-of-Sussex-UK-return-visa-Royal-Family-latest"
-    },
-    {
-       author: "@japantimes",
-       category: [
-          "opinion"
-       ],
-       description: "Renewables will most likely surpass the fossil fuel in electricity generation this year despite Trump's best efforts....",
-       id: "b1923391-8fd1-4316-9a43-7055b5401a26",
-       image: "https://cdn.japantimes.2xx.jp/wp-content/uploads/2020/08/np_file_31605-870x489.jpeg",
-       language: "en",
-       published: "2020-08-19 18:00:06 +0000",
-       title: "Coal’s days may be over in the U.S.",
-       url: "https://www.japantimes.co.jp/opinion/2020/08/19/commentary/coal-us/"
-    },
-    {
-       author: "@japantimes",
-       category: [
-          "opinion"
-       ],
-       description: "Only by working in solidarity can we end the COVID-19 pandemic and effectively tackle its consequences....",
-       id: "247b52db-8402-46b7-a2cf-7deef0ac27d2",
-       image: "https://cdn.japantimes.2xx.jp/wp-content/uploads/2020/08/np_file_31264-870x489.jpeg",
-       language: "en",
-       published: "2020-08-19 18:05:14 +0000",
-       title: "Taiwan can help the world recover better together",
-       url: "https://www.japantimes.co.jp/opinion/2020/08/19/commentary/world-commentary/taiwan-coronavirus-health/"
-    },
-    {
-       author: "@japantimes",
-       category: [
-          "opinion"
-       ],
-       description: "This could be the first step toward a strategic coalition to check aggression from Iran....",
-       id: "9bb08a34-9711-4499-b26c-ce3fd8f341b6",
-       image: "https://cdn.japantimes.2xx.jp/wp-content/uploads/2020/08/np_file_31713-870x489.jpeg",
-       language: "en",
-       published: "2020-08-19 18:10:26 +0000",
-       title: "Military reasons to celebrate the Israel-UAE deal",
-       url: "https://www.japantimes.co.jp/opinion/2020/08/19/commentary/world-commentary/military-israel-uae/"
-    },
-    {
-       author: "@japantimes",
-       category: [
-          "opinion"
-       ],
-       description: "Key economic actors are rife with deep interconnections....",
-       id: "b909dedc-3c64-4746-9435-7cefc8d5082f",
-       image: "https://cdn.japantimes.2xx.jp/wp-content/uploads/2020/08/np_file_31768-870x489.jpeg",
-       language: "en",
-       published: "2020-08-19 18:20:33 +0000",
-       title: "‘Too big to fail’ isn’t just a financial problem",
-       url: "https://www.japantimes.co.jp/opinion/2020/08/19/commentary/japan-commentary/japan-china-supply-chain-coronavirus/"
-    },
-    {
-       author: "Nick O'Malley",
-       category: [
-          "environment"
-       ],
-       description: "The animal is also at risk in NSW, Queensland and Tasmania....",
-       id: "659a9ba9-4ce9-4c82-a219-bc6c2e2e790a",
-       image: "https://static.ffx.io/images/$zoom_0.3531%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_53/t_crop_custom/q_86%2Cf_auto/t_theage_no_age_social_wm/ad5adcebc6bf920515178db09d72d76fe2de974a",
-       language: "en",
-       published: "2020-08-19 14:00:00 +0000",
-       title: "Platypus should be listed vulnerable in Victoria, says scientific panel",
-       url: "https://www.theage.com.au/environment/conservation/platypus-should-be-listed-vulnerable-in-victoria-says-scientific-panel-20200819-p55nbt.html?ref=rss"
-    },
-    {
-       author: "Nick O'Malley",
-       category: [
-          "environment"
-       ],
-       description: "The federal government will further fund research projects seeking to commercialise Australia's mountain of waste....",
-       id: "c1417d30-f858-4cbd-b043-e1af7c26a4c7",
-       image: "https://static.ffx.io/images/$zoom_0.1902%2C$multiply_0.7554%2C$ratio_1.776846%2C$width_1059%2C$x_0%2C$y_60/t_crop_custom/q_86%2Cf_auto/t_theage_no_age_social_wm/80519fad6c8ad3a44bb80a48eccb34d0119d53bb",
-       language: "en",
-       published: "2020-08-19 14:00:00 +0000",
-       title: "Research funded to find ways to turn our waste into dollars",
-       url: "https://www.theage.com.au/environment/sustainability/research-funded-to-find-ways-to-turn-our-waste-into-dollars-20200819-p55ncl.html?ref=rss"
-    },
-    {
-       author: "David Matthews",
-       category: [
-          "technology"
-       ],
-       description: "Starting this October, new Oculus VR owners will require a Facebook account to use their shiny new devices. Facebook announced the changes in a blog post along with what to do if you already have an Oculus account....",
-       id: "339e46da-e955-4c53-ba0a-8d511593aaa5",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 11:17:00 +0000",
-       title: "New Oculus headset owners will need a Facebook account",
-       url: "https://www.techspot.com/news/86425-oculus-vr-headsets-soon-require-facebook-account.html"
-    },
-    {
-       author: "Rob Thubron",
-       category: [
-          "technology"
-       ],
-       description: "Carnival boasts over 100 vessels operating under its ten different brands, including the popular Carnival Cruise Line, Princess Cruises, Costa Cruises, P&O, and Cunard Line. It has notified the US Securities and Exchange Commission (SEC) of the attack, revealing that hackers accessed a portion of on...",
-       id: "3535ab91-12c2-401b-8c70-7d9d77099343",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 12:05:00 +0000",
-       title: "Cruise line giant Carnival Corp. suffers ransomware attack, customer data accessed",
-       url: "https://www.techspot.com/news/86428-cruise-line-giant-carnival-corp-hit-ransomware-customer.html"
-    },
-    {
-       author: "Shawn Knight",
-       category: [
-          "technology"
-       ],
-       description: "The iconic BlackBerry brand is getting yet another lease on life. OnwardMobility, a startup created to deliver comprehensive, secure mobile device solutions to government, enterprise and business clients has licensed the rights to develop, engineer and bring a new BlackBerry mobile device to market ...",
-       id: "7777d2cb-7ce8-434d-973c-8de5d9dd47f4",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 14:42:00 +0000",
-       title: "Android-powered 5G BlackBerry phone with physical keyboard is coming in 2021",
-       url: "https://www.techspot.com/news/86431-android-powered-5g-blackberry-phone-physical-keyboard-coming.html"
-    },
-    {
-       author: "Shawn Knight",
-       category: [
-          "technology"
-       ],
-       description: "Panasonic on Wednesday confirmed that the upcoming Lumix S5 will be the newest camera to join its popular S-series line....",
-       id: "03635b02-7d6e-486e-9285-1e7f5acbfe57",
-       image: "None",
-       language: "en",
-       published: "2020-08-19 16:50:00 +0000",
-       title: "Panasonic confirms full-frame S5 camera reveal scheduled for September 2",
-       url: "https://www.techspot.com/news/86433-panasonic-confirms-full-frame-s5-camera-reveal-scheduled.html"
-    },
-    {
-       author: "@nypost",
-       category: [
-          "business"
-       ],
-       description: "President Trump said he would support Oracle acquiring TikTok in the US as the popular video-sharing app continues its search for a buyer. Speaking to reporters Tuesday, Trump called Oracle a ̶…...",
-       id: "719cdb7e-b94d-47c0-b20f-0978346e4bb3",
-       image: "https://nypost.com/wp-content/uploads/sites/2/2020/08/trump-tiktok-1.jpg?quality=90&strip=all&w=680&h=356&crop=1",
-       language: "en",
-       published: "2020-08-19 14:05:40 +0000",
-       title: "Trump backs Oracle as potential buyer for TikTok",
-       url: "https://nypost.com/2020/08/19/trump-backs-oracle-as-potential-buyer-for-tiktok/"
-    },
-    {
-       author: "@nypost",
-       category: [
-          "business"
-       ],
-       description: "Amazon is cracking down on sellers who don't live up to its two-day shipping promise — and it means they'll have to work weekends. The e-tail juggernaut this week told third-party selle…...",
-       id: "d5af5e18-7d43-4946-91ea-29e294ab5b1e",
-       image: "https://nypost.com/wp-content/uploads/sites/2/2020/08/Amazon-Warehouse-1.jpg?quality=90&strip=all&w=680&h=356&crop=1",
-       language: "en",
-       published: "2020-08-19 14:06:09 +0000",
-       title: "Amazon tells third-party Prime sellers to start working weekends",
-       url: "https://nypost.com/2020/08/19/amazon-tells-third-party-prime-sellers-to-start-working-weekends/"
-    },
-    {
-       author: "@nypost",
-       category: [
-          "business"
-       ],
-       description: "Apple became the US's first $2 trillion company on Tuesday — almost two years to the day after it became the first company in the world to reach the $1 trillion mark. The iPhone maker r…...",
-       id: "d27f7a9d-1ea5-48f1-8ef3-cac860f59afc",
-       image: "https://nypost.com/wp-content/uploads/sites/2/2020/08/Tim-Cook-Celebrate.jpg?quality=90&strip=all&w=680&h=356&crop=1",
-       language: "en",
-       published: "2020-08-19 15:28:12 +0000",
-       title: "Apple becomes first US company to reach $2 trillion valuation",
-       url: "https://nypost.com/2020/08/19/apple-becomes-first-us-company-to-reach-2-trillion-valuation/"
-    },
-    {
-       author: "Business Wire",
-       category: [
-          "hague",
-          "stockholm"
-       ],
-       description: "The resolution with these Defendants stops a fraudulent N95 scheme, results in a large donation to COVID-19 relief, and requires cooperation from Defendants in any further enforcement efforts by 3M ST. PAUL, Minn.--(BUSINESS WIRE)--Aug. 19, 2020-- In a federal court case brought by 3M in California ...",
-       id: "f2a5bbab-0775-4dea-a671-32838aa0fde3",
-       image: "https://markets.ft.com/data/images/pulse",
-       language: "en",
-       published: "2020-08-19 17:59:00 +0000",
-       title: "3M Stops Fake N95 Scheme, Resolving Lawsuit Claims Against Sellers on Amazon – Company Announcement",
-       url: "https://markets.ft.com/data/announce/detail?dockey=600-202008191359BIZWIRE_USPRX____BW5650-1"
-    },
-    {
-       author: "Business Wire",
-       category: [
-          "hague",
-          "stockholm"
-       ],
-       description: "MIAMI--(BUSINESS WIRE)--Aug. 19, 2020-- Despite the significant negative impact of the COVID-19 pandemic on businesses and households, Banesco USA reported strong 2020 first semester results including an 18% increase in total assets to $2.02 billion, a 7% increase in total gross loans, and an 11% in...",
-       id: "57ecb526-b6bf-43ef-8346-bc145722cf73",
-       image: "https://markets.ft.com/data/images/pulse",
-       language: "en",
-       published: "2020-08-19 17:56:00 +0000",
-       title: "Banesco USA's Positive First Semester Financial Results and Proactive Risk Management lead Fitch to Affirm its Ratings – Company Announcement",
-       url: "https://markets.ft.com/data/announce/detail?dockey=600-202008191356BIZWIRE_USPRX____BW5649-1"
-    },
-    {
-       author: "espn",
-       category: [
-          "sports"
-       ],
-       description: "A Florida appeals court ruled Wednesday that police violated the rights of New England Patriots owner Robert Kraft and others when they secretly video recorded them paying for massage parlor sex acts, barring the tapes' use at trial....",
-       id: "e6916041-bc59-4870-9ff5-1c028afe9814",
-       image: "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0513%2Fr542624_1296x729_16%2D9.jpg",
-       language: "en",
-       published: "2020-08-19 18:13:51 +0000",
-       title: "Court: Videos can't be used in Robert Kraft case",
-       url: "https://www.espn.com/nfl/story/_/id/29696044/court-rules-secret-videos-used-patriot-owner-robert-kraft-massage-parlor-case"
-    },
-    {
-       author: "espn",
-       category: [
-          "sports"
-       ],
-       description: "Recently appointed England women's coach Sarina Wiegman is adamant the gap is closing on the U.S. and insists the four-time champions are beatable....",
-       id: "8d398e58-5596-43db-8116-3ba6a88ec713",
-       image: "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0814%2Fr731467_1296x729_16%2D9.jpg",
-       language: "en",
-       published: "2020-08-19 17:51:41 +0000",
-       title: "England women's coach sees gap closing with U.S.",
-       url: "https://www.espn.com/soccer/england-engw/story/4163030/england-womens-coach-wiegman-sees-gap-closing-with-united-states"
-    },
-    {
-       author: "espn",
-       category: [
-          "sports"
-       ],
-       description: "Brooks Koepka has withdrawn from the Northern Trust at TPC-Boston over a lingering knee issue, ending his 2019-20 season and putting his status in doubt for the U.S. Open....",
-       id: "575b3e0a-1aa3-46c7-bfe1-ff29402d73b0",
-       image: "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0307%2Fr676318_1296x729_16%2D9.jpg",
-       language: "en",
-       published: "2020-08-19 18:13:25 +0000",
-       title: "Koepka to miss Cup playoffs, iffy for U.S. Open",
-       url: "https://www.espn.com/golf/story/_/id/29696150/brooks-koepka-withdraws-northern-trust-knee-issue"
-    },
-    {
-       author: "espn",
-       category: [
-          "sports"
-       ],
-       description: "Penn State coach James Franklin questions the process and the timing of the Big Ten's decision to postpone football this fall....",
-       id: "0ff315c0-4521-43a5-b0fe-39e7b554e899",
-       image: "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0115%2Fr652561_1296x729_16%2D9.jpg",
-       language: "en",
-       published: "2020-08-19 18:13:25 +0000",
-       title: "Penn St.'s Franklin frustrated by Big Ten process",
-       url: "https://www.espn.com/college-football/story/_/id/29696521/penn-state-nittany-lions-coach-james-franklin-frustrated-big-ten-communication-postponement"
-    },
-    {
-       author: "espn",
-       category: [
-          "sports"
-       ],
-       description: "Ole Miss football coach Lane Kiffin says it's a shame the NCAA won't give transfer waivers to players whose seasons have been postponed....",
-       id: "673b6cc6-913a-49a6-934f-4d0cc5c64144",
-       image: "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F1210%2Fr639710_1296x729_16%2D9.jpg",
-       language: "en",
-       published: "2020-08-19 18:13:25 +0000",
-       title: "Kiffin: Allow Big Ten, Pac-12 players to transfer",
-       url: "https://www.espn.com/college-football/story/_/id/29696072/ole-miss-rebels-coach-lane-kiffin-wants-transfer-waiver-players-postponed-seasons"
-    },
-    {
-       author: "espn",
-       category: [
-          "sports"
-       ],
-       description: "Get a summary of the Brooklyn Nets vs. Toronto Raptors basketball game...",
-       id: "47a44d75-8173-4631-8f73-5679dc2102d8",
-       image: "http://s.espncdn.com/stitcher/sports/basketball/nba/events/401236262.png?templateId=espn.com.share.1",
-       language: "en",
-       published: "2020-08-19 18:25:50 +0000",
-       title: "Follow live: Raptors eye another big effort in Game 2 against Nets",
-       url: "https://www.espn.com/nba/game?gameId=401236262"
-    },
-    {
-       author: "@BBCCymruFyw",
-       category: [
-          "regional"
-       ],
-       description: "Mae Cymru Fyw wedi comisiynu ffilmiau gan bobl ifanc yn ymateb i gyfnod Covid-19...",
-       id: "0dedd547-d1e0-4ef4-91c4-a652786fa3fd",
-       image: "https://ichef.bbci.co.uk/images/ic/1024x576/p08n0jx8.jpg",
-       language: "cy",
-       published: "2020-08-19 14:37:32 +0000",
-       title: "Ffilmiau byrion gan bobl ifanc: Cyfnod clo 'anhygoel'",
-       url: "https://www.bbc.co.uk/cymrufyw/53601407"
-    },
-    {
-       author: "@BBCCymruFyw",
-       category: [
-          "regional"
-       ],
-       description: "Cafodd dyn ei gadw yn y ddalfa dros y Nadolig ar gam wedi i bedoffeil ddefnyddio'i lun a'i enw....",
-       id: "488c4074-6c38-444b-bace-5a423220835f",
-       image: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/EB16/production/_114028106_stephenpriceborderse.jpg",
-       language: "pt",
-       published: "2020-08-19 14:54:31 +0000",
-       title: "Beio dyn ar gam wedi i bedoffeil ddwyn ei lun",
-       url: "https://www.bbc.co.uk/cymrufyw/53839800"
-    },
-    {
-       author: "@BBCCymruFyw",
-       category: [
-          "regional"
-       ],
-       description: "Cyfreithwyr yn beirniadu galwad Sarah Atherton ar i'r Fyddin atal teithiau mudwyr o Ffrainc i'r DU....",
-       id: "b2ca7576-511f-432f-82da-eba2e532f821",
-       image: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/9186/production/_113845273_migrants1.jpg",
-       language: "cy",
-       published: "2020-08-19 15:22:37 +0000",
-       title: "Beirniadaeth i alwad AS i'r Fyddin atal ymfudwyr",
-       url: "https://www.bbc.co.uk/cymrufyw/53837901"
-    }
- ];
+   {
+      "id":"9e351c69-f905-4443-9a82-403ff5904b5d",
+      "title":"AARP Introduces Alcove Virtual Reality App on Oculus Quest to Help Families Stay Connected \u2013 Company Announcement",
+      "description":"WASHINGTON, Aug. 20, 2020 /PRNewswire/ --\u00a0AARP Innovation Labs today released Alcove\u00a0for Oculus Quest, a virtual reality home that helps families and friends\u00a0stay connected and discover new experiences, no matter their travel budget, time, or mobility constraints. Alcove is the first family-oriented...",
+      "url":"https://markets.ft.com/data/announce/detail?dockey=600-202008200957PR_NEWS_USPRX____DC98949-1",
+      "author":"PR Newswire",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "hague",
+         "stockholm"
+      ],
+      "published":"2020-08-20 13:57:00 +0000"
+   },
+   {
+      "id":"9c359928-8990-44db-b86e-257a8c07b7fe",
+      "title":"Why people get sick in virtual reality",
+      "description":"\"Cybersickness\" might sound right out of a sci-fi novel, but it's an illness impacting people across industries today. UNSW Sydney researchers are trying to understand what causes this sickness\u2014and how to prevent it....",
+      "url":"https://techxplore.com/news/2020-08-people-sick-virtual-reality.html",
+      "author":"techxplore",
+      "image":"https://scx2.b-cdn.net/gfx/news/2020/whypeopleget.jpg",
+      "language":"en",
+      "category":[
+         "science"
+      ],
+      "published":"2020-08-20 12:17:21 +0000"
+   },
+   {
+      "id":"5fe9bff2-99ed-4f6c-81c6-5bc45e6a1f39",
+      "title":"Dan Gainor: Democrats\u2019 \u2018Unhappy Days\u2019 convention shows virtual reality doesn\u2019t equal real energy",
+      "description":"The \"Unhappy Days\" convention is better dubbed Must-Flee TV...",
+      "url":"https://www.foxnews.com/opinion/democrats-unhappy-days-convention-dan-gainor",
+      "author":"Fox News",
+      "image":"https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/768d7fa9-ea83-4865-8143-3522a7f69c4f/8f717986-9b28-4b81-a108-84ce1b9fc164/1280x720/match/1024/512/image.jpg?ve=1&tl=1",
+      "language":"en",
+      "category":[
+         "opinion"
+      ],
+      "published":"2020-08-20 12:00:03 +0000"
+   },
+   {
+      "id":"c8b2d6b5-d862-4832-8ac5-3afcc66e46d6",
+      "title":"Police officers become first in UK to learn how to use tasers via VR",
+      "description":"Derbyshire Constabulary is trialling the high-tech training method which involves placing officers in realistic scenarios using a virtual reality platform...",
+      "url":"https://www.birminghammail.co.uk/news/midlands-news/police-officers-become-first-uk-18799684",
+      "author":"einnews",
+      "image":"https://i2-prod.coventrytelegraph.net/incoming/article18799689.ece/ALTERNATES/s1200/0_virtual-cops-of-557143.jpg",
+      "language":"en",
+      "category":[
+         "national"
+      ],
+      "published":"2020-08-20 11:00:43 +0000"
+   },
+   {
+      "id":"3249b957-a7df-44bc-991f-bc7db46804ce",
+      "title":"VRAI appoints Davy to reel in more investors after raising \u20ac1.2m",
+      "description":"Irish virtual reality remote training simulation provider sees surge in demand...",
+      "url":"https://www.irishtimes.com/business/technology/vrai-appoints-davy-to-reel-in-more-investors-after-raising-1-2m-1.4334166",
+      "author":"@chastaylor",
+      "image":"https://www.irishtimes.com/polopoly_fs/1.4334160.1597868891!/image/image.jpg",
+      "language":"en",
+      "category":[
+         "business"
+      ],
+      "published":"2020-08-20 04:30:00 +0000"
+   },
+   {
+      "id":"ef34d2cd-c646-4740-8e85-06f4cc5df7bf",
+      "title":"New Oculus VR headsets now require Facebook accounts to use",
+      "description":"New Oculus virtual reality HMDs will now require a Facebook account to set up, and all Oculus owners will soon need a FB too....",
+      "url":"https://www.tweaktown.com/news/74587/new-oculus-vr-headsets-now-require-facebook-accounts-to-use/index.html",
+      "author":"DeekeTweak",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "game"
+      ],
+      "published":"2020-08-19 16:33:01 +0000"
+   },
+   {
+      "id":"fa589b4f-a986-4ced-b61a-a6c76a56f3eb",
+      "title":"Van Jones Teams with Marvel Stars in VR Series that Puts You Inside Sexual Harassment, Racial Profiling Situations",
+      "description":"After teaming with \"Black Panther\" star Winston Duke to put people in a virtual reality police traffic stop scenario,\u00a0former Obama special advisor Van Jones is teaming with\u00a0Marvel movie star Brie Larson for a sexual harassment episode of his virtual reality f\u2026",
+      "url":"http://www.breitbart.com/entertainment/2020/08/19/van-jones-teams-with-marvel-stars-in-vr-series-that-puts-you-inside-sexual-harassment-racial-profiling-situations/",
+      "author":"",
+      "image":"https://media.breitbart.com/media/2020/08/vanjones-640x335.png",
+      "language":"en",
+      "category":[
+         "news_media"
+      ],
+      "published":"2020-08-19 16:25:30 +0000"
+   },
+   {
+      "id":"544276e5-9239-42f0-a5dc-f4f2d3d58cf4",
+      "title":"Evidence on Virtual Reality\u2013Based Therapies for Psychiatric Disorders: Meta-Review of Meta-Analyses",
+      "description":"Background: Among all diseases globally, mental illnesses are one of the major causes of burden. As many people are resistant to conventional evidence-based treatments, there is an unmet need for the implementation of novel mental health treatments. Efforts to increase the effectiveness and benefits...",
+      "url":"http://feedproxy.google.com/~r/JMedInternetRes/~3/xXP6ZsG-1l8/",
+      "author":"Gunther Eysenbach MD MPH FACMI",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "academia",
+         "biology"
+      ],
+      "published":"2020-08-19 14:15:55 +0000"
+   },
+   {
+      "id":"56c2a548-8d4f-41b4-a5dd-c644afbdbded",
+      "title":"Frostpoint VR: Proving Grounds closed beta kicks off on Steam next week",
+      "description":"Frostpoint VR: Proving Grounds\u00a0will go into closed beta next week on Steam.Post-apocalyptic virtual reality PvP game Frostpoint VR: Proving Grounds from inXile Entertainment and Thirdverse Inc. will have a closed beta test. It kicks off on August 24 and ends September 4. For this test, folks will be...",
+      "url":"https://www.vg247.com/2020/08/19/frostpoint-vr-proving-grounds-closed-beta-kicks-off-steam-next-week/",
+      "author":"Stephany Nunneley",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "game",
+         "entertainment"
+      ],
+      "published":"2020-08-19 14:07:15 +0000"
+   },
+   {
+      "id":"83df8f14-641b-453d-a534-8654e1b700dd",
+      "title":"Oculus VR Headsets Will Soon Require Facebook Accounts",
+      "description":"Some of the very best VR headsets right now are Oculus branded, and we'd even argue that the Oculus Quest is THE VR headset to own. Facebook bought the Oculus company in early 2014, and now the social network is imposing its will on virtual reality fans. Eventually, you'll have to log in using a Fac...",
+      "url":"https://www.reviewgeek.com/51123/oculus-vr-headsets-will-soon-require-facebook-accounts/",
+      "author":"Josh Hendrickson",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-19 12:51:41 +0000"
+   },
+   {
+      "id":"1f3d4706-458a-4a64-b418-0a17e3668268",
+      "title":"Oculus is going to make you sign in with Facebook before you can use your virtual reality headset properly",
+      "description":"The news comes as Facebook is also making Messenger and Instagram more closely linked...",
+      "url":"https://www.independent.co.uk/life-style/gadgets-and-tech/news/oculus-vr-headset-facebook-sign-in-features-virtual-reality-a9677516.html",
+      "author":"Adam Smith",
+      "image":"https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/11/18/15/virtual-reality-fashion.jpg",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-19 11:16:43 +0000"
+   },
+   {
+      "id":"c3bebc9d-3d5b-44d8-825a-6135a8bd91d3",
+      "title":"Apple files patent for ring device",
+      "description":"Apple's ring device could produce haptic feedback and be used in virtual reality settings...",
+      "url":"https://www.macworld.co.uk/news/apple/patent-ring-3794371/",
+      "author":"Karen Haslam",
+      "image":"https://www.macworld.co.uk/cmsdata/features/3794371/iring_patent_thumb800.jpg",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-19 11:16:00 +0000"
+   },
+   {
+      "id":"61238069-0c7a-44c0-bf79-2d7a3c259ef5",
+      "title":"Oculus' Move To Make Facebook Accounts Mandatory For Users Of Its VR Headsets Sparks Social Media Outrage",
+      "description":"Virtual reality headset maker Oculus announced Tuesday that a user account with parent company\u00a0Facebook Inc's\u00a0(NASDAQ: FB) namesake social media platform\u00a0would be necessary to log into its devices beginning October 2020.\nWhat Happened\nThe Mark Zuckerberg-led company's VR headset division said that a...",
+      "url":"http://feeds.benzinga.com/~r/benzinga/tech/~3/ME4yW8cfUM0/oculus-move-to-make-facebook-accounts-mandatory-for-users-of-its-vr-headsets-sparks-social-media-out",
+      "author":"Shivdeep Dhaliwal",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "finance",
+         "technology"
+      ],
+      "published":"2020-08-19 09:00:31 +0000"
+   },
+   {
+      "id":"d58f44bd-ce73-404e-b98a-df582b0a04c0",
+      "title":"With Virtual Reality, Caregivers Can Become Patients",
+      "description":"Carrie Shaw's struggle with her mother's dementia led her to create a company that allows users to experience the struggles of growing older....",
+      "url":"https://www.nytimes.com/2020/08/19/health/virtual-reality-caregivers-older-patients.html",
+      "author":"Kerry Hannon",
+      "image":"https://static01.nyt.com/images/2020/08/05/multimedia/05sp-ff-vrhealth2/merlin_175260825_dc8b2a75-ab74-4dfa-a7d3-503ec693b3d9-facebookJumbo.jpg",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-19 09:00:17 +0000"
+   },
+   {
+      "id":"73641982-4eb0-4d66-9d2d-04967d6f116c",
+      "title":"Facebook Account to Be Required to Fully Use Oculus Headsets in 2023",
+      "description":"A Facebook account is going to be required to retain full use of an Oculus Virtual Reality headset, as announced yesterday by Oculus (owned by Facebook). This won't happen for quite a while, though. The first changes will begin in October this year when everyone using an Oculus device for the first ...",
+      "url":"https://wccftech.com/facebook-account-to-be-required-to-fully-use-oculus-headsets-in-2023/",
+      "author":"Alessio Palumbo",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-19 07:42:28 +0000"
+   },
+   {
+      "id":"b8852c99-8457-4ae9-82a6-c8369f58d709",
+      "title":"Oculus VR Will Soon Require Your Facebook Login",
+      "description":"Facebook-owned virtual reality company Oculus announced yesterday that starting in October, new users will be required to log in with their Facebook accounts. Those with existing Oculus accounts can continue using them for the next two years but will be offered a choice to merge their accounts with ...",
+      "url":"https://hypebeast.com/2020/8/oculus-vr-facebook-account-connectivity-requirement",
+      "author":"HYPEBEAST",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-19 04:43:58 +0000"
+   },
+   {
+      "id":"89afe3ad-e2a6-4268-82d3-46bbb887ca57",
+      "title":"Oculus VR headsets will soon require a Facebook account",
+      "description":"From the moment Facebook acquired Oculus in 2014 we've been expecting this news, and it's finally come. Starting in October, you'll need a Facebook account to log into Oculus virtual reality devices, including all Oculus hardware being released in the future, the company announced on Tuesday.Things ...",
+      "url":"https://www.pcworld.com/article/3571931/oculus-vr-headsets-will-soon-require-a-facebook-account.html#tk.rss_software",
+      "author":"Brad Chacos",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "software"
+      ],
+      "published":"2020-08-18 21:40:00 +0000"
+   },
+   {
+      "id":"9df23681-3530-49d5-8a36-32371be8dc72",
+      "title":"Oculus VR Devices Will Soon Require Facebook Accounts",
+      "description":"Starting in October, new users of the Oculus virtual reality gaming platform will need to log in with a Facebook account, the company announced today. Current users will need to merge their Oculus accounts with a Facebook account within the next two years to maintain the \"full functionality\" of thei...",
+      "url":"https://kotaku.com/oculus-vr-devices-will-soon-require-facebook-accounts-1844766526",
+      "author":"Ian Walker",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "game",
+         "entertainment"
+      ],
+      "published":"2020-08-18 19:30:00 +0000"
+   },
+   {
+      "id":"425babf7-32cc-4ad2-9174-447b5b9c89db",
+      "title":"Oculus VR users can't ignore the Facebook reality for much longer",
+      "description":"Since Facebook's acquisition of Oculus VR six years ago, users of the virtual reality headsets have been able to avoid entanglement with the social network. Currently, new users of headsets like the Rift and Quest can log into their new device using a separate Oculus account, rather than jumping int...",
+      "url":"https://www.trustedreviews.com/news/oculus-vr-users-cant-ignore-the-facebook-reality-for-much-longer-4046064",
+      "author":"Chris Smith",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-18 18:34:08 +0000"
+   },
+   {
+      "id":"089191d4-712d-453f-9f1c-aff7ea0b86f4",
+      "title":"Why This Russian Billionaire Is Creating A Virtual Reality World For Music Festivals And Concerts",
+      "description":"Mikhail Prokhorov, who built a fortune in nickel mining and used to own the Brooklyn Nets NBA team, is betting that VR is the future of music shows....",
+      "url":"https://www.forbes.com/sites/angelauyeung/2020/08/18/why-this-russian-billionaire-is-creating-a-virtual-reality-world-for-music-festivals-and-concerts/",
+      "author":"Angel Au-Yeung",
+      "image":"https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f3c0d314ff3dab61b57572b%2F0x0.jpg%3FcropX1%3D0%26cropX2%3D3000%26cropY1%3D0%26cropY2%3D1687",
+      "language":"en",
+      "category":[
+         "ai",
+         "science"
+      ],
+      "published":"2020-08-18 17:20:30 +0000"
+   },
+   {
+      "id":"2cc49438-f80e-429c-9d1f-9ec391f06280",
+      "title":"MatryODShka: Real-time 6DoF Video View Synthesis using Multi-Sphere Images. (arXiv:2008.06534v1 [cs.CV])",
+      "description":"We introduce a method to convert stereo 360{deg} (omnidirectional stereo)\nimagery into a layered, multi-sphere image representation for six\ndegree-of-freedom (6DoF) rendering. Stereo 360{deg} imagery can be captured\nfrom multi-camera systems for virtual reality (VR), but lacks motion parallax\nand co...",
+      "url":"http://arxiv.org/abs/2008.06534",
+      "author":"<a href=\"http://arxiv.org/find/cs/1/au:+Attal_B/0/1/0/all/0/1\">Benjamin Attal</a>, <a href=\"http://arxiv.org/find/cs/1/au:+Ling_S/0/1/0/all/0/1\">Selena Ling</a>, <a href=\"http://arxiv.org/find/cs/1/au:+Gokaslan_A/0/1/0/all/0/1\">Aaron Gokaslan</a>, <a href=\"http://arxiv.org/find/cs/1/au:+Richardt_C/0",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "academic",
+         "CS",
+         "CV"
+      ],
+      "published":"2020-08-18 17:19:27 +0000"
+   },
+   {
+      "id":"2d167780-11e8-41bc-8930-4e63b2317cfe",
+      "title":"You'll need a Facebook account to use future Oculus headsets",
+      "description":"Photo by Amelia Holowaty Krales / The Verge\nOculus will soon require all of its virtual reality headset users to sign up with a Facebook account. The Facebook-owned company says it will start removing support for separate Oculus accounts in October, although users can maintain an existing account un...",
+      "url":"https://www.theverge.com/2020/8/18/21372435/oculus-facebook-login-change-separate-account-support-end-quest-october",
+      "author":"Adi Robertson",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "technology"
+      ],
+      "published":"2020-08-18 17:00:00 +0000"
+   },
+   {
+      "id":"c75e9926-b256-4792-8062-40fcd17b7c75",
+      "title":"In Paris, Virtual Reality Experience Shows Notre-Dame Before and After 2019 Fire",
+      "description":"The 18-minute documentary features footage of usually inaccessible spots, including the attic and sacristy...",
+      "url":"https://www.smithsonianmag.com/smart-news/virtual-reality-experience-shows-notre-dame-and-after-2019-fire-180975581/",
+      "author":"Follow @theresakmach",
+      "image":"https://thumbs-prod.si-cdn.com/oZ-j3okgFs7i7RkWOcb96rmvsTk=/800x600/filters:no_upscale():focal(2546x2063:2547x2064)/https://public-media.si-cdn.com/filer/6e/95/6e956b3b-dd1d-494d-8b84-9711a678ef9f/2020_aug17_notredame.jpg",
+      "language":"en",
+      "category":[
+         "regional",
+         "paris"
+      ],
+      "published":"2020-08-18 11:30:00 +0000"
+   },
+   {
+      "id":"fa07631e-43d4-4e76-a150-e6c9f882b8af",
+      "title":"K11 Musea Joins Apportfolio for \"POP INFINITY\" Collectible Art Exhibition",
+      "description":"APPortfolio has unveiled a new art exhibition with Hong Kong's K11 Musea. Titled \"POP INFINITY,\" the exhibition is comprised of both a virtual reality component -- working in favor of the current COVID-19 epidemic -- and an assortment of collectible artwork featuring artists from all over the globe....",
+      "url":"https://hypebeast.com/2020/8/k11-musea-apportfolio-pop-infinity-art-collectibles-info",
+      "author":"HYPEBEAST",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "art"
+      ],
+      "published":"2020-08-18 06:58:19 +0000"
+   },
+   {
+      "id":"bb0d33db-e456-4b44-80c3-6c9840ec7bb3",
+      "title":"Readaptation Treatment of Mal de Debarquement Syndrome With a Virtual Reality App: A Pilot Study",
+      "description":"Mal de Debarquement syndrome (MdDS) is composed of constant phantom sensations of motion, which are frequently accompanied by increased sensitivity to light, inability to walk on a patterned floor, the sensation of ear fullness, head pressure, anxiety, and depression. This disabling condition genera...",
+      "url":"https://www.frontiersin.org/articles/10.3389/fneur.2020.00814",
+      "author":"Chang Liu",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "academia"
+      ],
+      "published":"2020-08-18 00:00:00 +0000"
+   },
+   {
+      "id":"d2d1d513-c3ff-4264-9cc6-8bbcd6d3b1a4",
+      "title":"HTC Vive Sync VR enterprise tool gets web browser and Android support",
+      "description":"HTC's Vive Sync, an enterprise tool designed to help teams interface with each other using virtual reality headsets, just received a big update. According to the company, it has added a numbe\u2026...",
+      "url":"https://www.slashgear.com/htc-vive-sync-vr-enterprise-tool-gets-web-browser-and-android-support-17633895/",
+      "author":"@slashgear",
+      "image":"https://cdn.slashgear.com/wp-content/uploads/2020/08/microsoft_teams_vive_main2.jpg?w=640",
+      "language":"en",
+      "category":[
+         "business"
+      ],
+      "published":"2020-08-17 23:34:27 +0000"
+   },
+   {
+      "id":"4dafacf6-b300-4464-939b-07eb68cb9306",
+      "title":"Epic Games appears to out Apple VR development in Fortnite dispute",
+      "description":"Epic Games appears to have outed Apple development on virtual reality platforms as part of its dispute with the iPhone maker.Credit: FacebookThe game studio recently implemented a direct payment system in an apparent attempt to bait Apple into removing Fortnite from the App Store. Apple did, and in ...",
+      "url":"https://appleinsider.com/articles/20/08/17/epic-games-appears-to-out-apple-vr-development-in-fortnite-dispute",
+      "author":"Mike Peterson",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "technology",
+         "gadgets"
+      ],
+      "published":"2020-08-17 22:31:09 +0000"
+   },
+   {
+      "id":"aba8cc0c-ecd9-4f34-a37e-7f35dc59bcbe",
+      "title":"Hallett Cove's fossil secrets are now accessible through virtual reality",
+      "description":"A nice way to see the world when travel isn't an option....",
+      "url":"https://www.zmescience.com/science/hallett-coves-fossil-3d-tour-262343/",
+      "author":"Fermin Koop",
+      "image":"None",
+      "language":"en",
+      "category":[
+         "science"
+      ],
+      "published":"2020-08-17 18:27:35 +0000"
+   },
+   {
+      "id":"733e6e9a-c7f2-4ffe-b5fc-97ca337e574c",
+      "title":"Russian Billionaire Invests in VR Parties Startup",
+      "description":"Billionaire Mikhail Prokhorov is betting that party lovers may have to get by with virtual reality in this time of lockdowns and pandemics.",
+      "url":"https://www.bloomberg.com/news/articles/2020-08-17/russian-billionaire-gets-the-party-going-with-vr-investment",
+      "author":"",
+      "image":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iHp3dvzGprD8/v0/1200x800.jpg",
+      "language":"en",
+      "category":[
+         "general"
+      ],
+      "published":"2020-08-17 14:00:00 +0000"
+   },
+   {
+      "id":"43c32d91-e030-4194-b927-0d0525593dcc",
+      "title":"Russian billionaire and former Brooklyn Nets owner Mikhail Prokhorov is quietly backing a virtual reality startup trying to rival Facebook with a multiplayer world",
+      "description":"The former Brooklyn Nets owner said he expected \"explosive growth\" in the virtual reality market over the next decade....",
+      "url":"https://www.businessinsider.com/facebook-vr-challenger-sensorium-russian-billionaire-mikhail-prokhorov-2020-8",
+      "author":"Martin Coulter",
+      "image":"https://i.insider.com/5f3a7edce89ebf001f04526a?width=1200&format=jpeg",
+      "language":"en",
+      "category":[
+         "startup"
+      ],
+      "published":"2020-08-17 14:00:00 +0000"
+   }
+];
 
 export default newsDummyData;
