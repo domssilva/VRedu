@@ -6,6 +6,7 @@ $white: #EDF2F4;
 $grey: #8D99AE;
 $blue: #2B2D42;
 $radius: 10px;
+$nav-height: 5.5rem;
 
 .container {
   color: $white;
@@ -67,6 +68,8 @@ $radius: 10px;
 }
 
 .filter {
+  
+  padding-top: $nav-height;
 
   h3 {
     text-align: center;

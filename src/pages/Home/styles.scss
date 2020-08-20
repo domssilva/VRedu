@@ -1,0 +1,40 @@
+// variables
+$black: #111;
+$red: #D80032;
+$orange: #EF233C;
+$white: #EDF2F4;
+$grey: #8D99AE;
+$blue: #2B2D42;
+$nav-height: 5.5rem;
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: $black;
+  background-position: top left;
+  background-size: contain;
+  background-image: 
+    linear-gradient(90deg, rgba($red, .2), rgba($black, .6)),
+    url('../../media/vrman.jpg');
+
+  font-weight: 400;
+  padding: 4rem 8rem;
+  color: $white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__intro {
+    position: relative;
+    left: 30rem;
+    width: 60rem;
+    padding: 3rem 4rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    font-size: 3rem;
+    background: rgba($white, .8);
+    color: $black;
+  }
+}
+

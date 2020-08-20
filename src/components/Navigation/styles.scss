@@ -5,12 +5,20 @@ $orange: #EF233C;
 $white: #EDF2F4;
 $grey: #8D99AE;
 $blue: #2B2D42;
+$nav-height: 5.5rem;
 
 .navigation {
-
+  width: 100%;
   padding: 1rem 4rem;
+  height: $nav-height;
+
+  top: 0;
+  left: 0;
+  position: absolute;
+
   display: flex;
   align-items: center;
+  
   background-color: $white;
   border-bottom: 3px solid $orange;
   box-shadow: 0 1rem 1rem rgba($black, 0.3);

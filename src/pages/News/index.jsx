@@ -27,8 +27,8 @@ const News = () => {
   }, []);
 
   return (
-    <section className="home">
-      <div className="home__intro">
+    <section className="news">
+      <div className="news__intro">
         <h1>Latest VR news</h1>
         {
           (vrNews.length === 0)  ? (
