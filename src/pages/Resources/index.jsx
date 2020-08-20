@@ -67,6 +67,12 @@ const Resources = () => {
             <TableRow type='link' link='https://www.youtube.com/playlist?list=PLe63S5Eft1KYGqgkx9I70vfWmvvOZ7apF' text='Godot Desktop VR tutorials'/>
             </TableCol>
           </div>          
+          <div className='container__row-tables mt'>
+          <TableCol title='VR Development Youtube Channels'>
+              <TableRow type='link' link='https://www.youtube.com/channel/UCPJlesN59MzHPPCp0Lg8sLw' text='Valem'/>
+              <TableRow type='link' link='https://www.youtube.com/c/VRDevSchool/videos' text='VR Dev School'/>
+            </TableCol>
+          </div>          
         </div>
       
         <div className="container__row">

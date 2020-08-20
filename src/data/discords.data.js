@@ -17,6 +17,11 @@ const discords = [
     category: 'VR Development',
   },
   {
+    name: 'Valem',
+    invite: 'https://discord.gg/5uhRegs',
+    category: 'VR Development',
+  },
+  {
     name: 'OpenComposite',
     invite: 'https://discord.gg/4thgMhe',
     category: 'VR Software',
