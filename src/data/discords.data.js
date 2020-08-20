@@ -7,6 +7,11 @@ const discords = [
     category: 'VR Development',
   },
   {
+    name: 'VR Game Development',
+    invite: 'https://discord.gg/N6pcffV',
+    category: 'VR Development',
+  },
+  {
     name: 'MiroWin VR',
     invite: 'https://discord.gg/RqtVFYS',
     category: 'VR Development',
@@ -21,11 +26,6 @@ const discords = [
     invite: 'https://discord.gg/2aE2Nfq',
     category: 'VR Hardware',
   },
-  {
-    name: 'VRChat',
-    invite: 'https://discord.gg/2aE2Nfq',
-    category: 'VR Social',
-  }
-]
+];
 
 export default discords;

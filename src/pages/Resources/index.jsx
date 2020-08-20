@@ -2,7 +2,7 @@ import React from 'react';
 
 import TableCol from '../../components/TableCol';
 import TableRow from '../../components/TableRow';
-import { FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaMicrophone, FaGithub, FaBookOpen, FaCommentAlt, FaChalkboardTeacher, FaCode } from 'react-icons/fa';
 import discords from '../../data/discords.data';
 import './styles.scss';
 
@@ -21,17 +21,23 @@ const Resources = () => {
               <a href="#communities">Communities</a>
             </li>
             <li>
-              <a href="#development">development</a>
+              <a href="#programming">programming</a>
             </li>
             <li>
               <a href="#lectures">lectures</a>
+            </li>
+            <li>
+              <a href="#repos">github</a>
             </li>
           </ul>
       </section>
 
       <section className="container">
         <div className="container__row">
-          <h3 className="container__row-title" id="development">development</h3>
+          <h3 className="container__row-title" id="programming">
+            <span>programming</span>
+            <FaCode className="icon"/>
+          </h3>
           <div className='container__row-tables'>
             <TableCol title='Game Engine'>
               <TableRow type='text' text='Unreal Engine'/>  
@@ -64,12 +70,15 @@ const Resources = () => {
         </div>
       
         <div className="container__row">
-          <h3 className="container__row-title" id="podcasts">podcasts</h3>
+          <h3 className="container__row-title" id="podcasts">
+            <span>podcasts</span>
+            <FaMicrophone className="icon"/>
+            </h3>
           <div className="container__row-tables">
             <TableCol title='podcasts'>
-              <TableRow type='link' link='http://www.revvrstudios.com/' text='revvrstudios'/>
-              <TableRow type='link' link='https://vrscout.com/podcast/' text='vrscout'/>
               <TableRow type='link' link='http://voicesofvr.com/' text='voiceosofvr'/>
+              <TableRow type='link' link='https://vrscout.com/podcast/' text='vrscout'/>
+              <TableRow type='link' link='http://www.revvrstudios.com/' text='revvrstudios'/>
               <TableRow type='link' link='https://www.youtube.com/channel/UCD_Hu0Hnf7lFyPzeYgy12jQ' text='FReality'/>
               <TableRow type='link' link='https://www.thevrara.com/podcast' text='Everything VR &amp; AR'/>
             </TableCol>
@@ -77,18 +86,25 @@ const Resources = () => {
         </div>
       
         <div className="container__row">
-          <h3 className="container__row-title" id="documents">free documents</h3>
+          <h3 className="container__row-title" id="documents">
+            <span>free documents</span>
+            <FaBookOpen className="icon"/>
+          </h3>
           <div className="container__row-tables">
             <TableCol title="books &amp; pdf's">
-              <TableRow type='link' link='https://ec.europa.eu/futurium/en/system/files/ged/vr_ecosystem_eu_report_0.pdf' text="European VR's ecosystem report"/>
+              <TableRow type='link' link='https://livi.link/entering-metaverse-pdf' text="Guide to working in AR/VR"/>
               <TableRow type='link' link='http://vr.cs.uiuc.edu/vrbook.pdf' text='Virtual Reality - Steven M. LaValle'/>
               <TableRow type='link' link='https://epicgames.ent.box.com/s/n12ixy53l8cknz73npimsr54frkvm72c' text="Creator's Field guide to emerging careers in interactive 3D"/>
+              <TableRow type='link' link='https://ec.europa.eu/futurium/en/system/files/ged/vr_ecosystem_eu_report_0.pdf' text="European VR's ecosystem report"/>
             </TableCol>
           </div>
         </div>
 
         <div className="container__row">
-          <h3 className="container__row-title" id="lectures">lectures</h3>
+          <h3 className="container__row-title" id="lectures">
+            <span>Lectures</span>
+            <FaChalkboardTeacher className="icon"/>
+          </h3>
           <div className="container__row-tables">
             <TableCol title='Youtube Playlist'>
               <TableRow type='link' link='https://www.youtube.com/playlist?list=PLbMVogVj5nJSyt80VRXYC-YrAvQuUb6dh' text='Virtual Reality by Prof Steven LaValle'/>
@@ -112,7 +128,10 @@ const Resources = () => {
         </div>
 
         <div className="container__row">
-          <h3 className="container__row-title" id="communities">communities</h3>
+          <h3 className="container__row-title" id="communities">
+            <span>communities</span>
+            <FaCommentAlt className="icon"/>
+          </h3>
           <div className="container__row-tables">
             <TableCol title='discord'>
                 {
@@ -140,6 +159,21 @@ const Resources = () => {
               <TableRow/>
               <TableRow/>
               <TableRow/>
+            </TableCol>
+          </div>
+        </div>
+
+        <div className="container__row">
+          <h3 className="container__row-title" id="repos">
+            <span>github repos</span>
+            <FaGithub className="icon"/>
+          </h3>
+          <div className="container__row-tables">
+            <TableCol title='useful repositories'>
+                <TableRow type='link' link='https://github.com/misslivirose/learnvr' text='learnvr'/>
+                <TableRow type='link' link='https://github.com/googlevr/gvr-unity-sdk' text='Google VR SDK for Unity'/>
+                <TableRow type='link' link='https://github.com/Corysia/Unity-Oculus-Example' text='Unity-Oculus-Example'/>
+                <TableRow type='link' link='https://github.com/ValveSoftware/openvr' text='OpenVR SDK'/>
             </TableCol>
           </div>
         </div>
