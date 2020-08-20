@@ -10,7 +10,8 @@ export default function Navigation() {
         <Link to='/' className='logo'>VR-edu</Link>
       </div>
       <div className='navigation__right'>
-        <Link to='/videos' title=''>Videos</Link>
+        <Link to='/news' title='vr news'>News</Link>
+        <Link to='/videos' title='watch vr content'>Videos</Link>
         <Link to='/resources' title='start learning!'>Resources</Link>
       </div>
     </nav>

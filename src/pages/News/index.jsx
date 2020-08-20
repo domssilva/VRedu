@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import newsDummyData from '../../data/apinews.data';
 import './styles.scss';
 
-const Home = () => {
+const News = () => {
 
   const [vrNews, setVrNews] = useState([]);
 
@@ -62,4 +62,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default News;
