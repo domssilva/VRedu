@@ -16,6 +16,7 @@ const News = ({ isLoading }) => {
   const apiKey = process.env.REACT_APP_API_TOKEN;
   const url = `https://api.currentsapi.services/v1/search?keywords=Virtual%20Reality&language=en&apiKey=${apiKey}`;
 
+
   // don't make the api call outside useEffect (rendering loop will consume API requests!)
   useEffect(() => {
     if (!development) {
