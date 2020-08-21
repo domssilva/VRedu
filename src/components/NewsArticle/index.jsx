@@ -47,7 +47,7 @@ const NewsArticle = ({ data }) => {
         />
         <p className="article__txt">{data.description}</p>
       </div>
-      <a href={data.url} className="btn" target="_blank" without rel="noopener noreferrer">read full article</a>
+      <a href={data.url} className="btn" target="_blank" rel="noopener noreferrer">read full article</a>
     </article>
   )
 }

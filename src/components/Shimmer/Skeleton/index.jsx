@@ -6,7 +6,7 @@ const Skeleton = () => {
   return (
   <article className="shimmer">
       <div className="shimmer__top">
-        <h2 className="shimmer__title"></h2>
+        <span className="shimmer__title"></span>
       </div>
       <div className="shimmer__body">
         <div className='shimmer__img'/>
@@ -17,7 +17,7 @@ const Skeleton = () => {
           <p className="shimmer__txt-p"></p>
         </div>
       </div>
-      <a href='#' className="btn" target="_blank" without rel="noopener noreferrer"></a>
+      <span className="shimer__btn"></span>
     </article>
   )
 }

@@ -37,7 +37,7 @@ const News = ({ isLoading }) => {
       </div>
       <main className="home__news">
         {
-          isLoading ? <LoadingNewsArticle/> : vrNews.map(newsData => <NewsArticle data={newsData}/>)
+          isLoading ? <LoadingNewsArticle/> : vrNews.map(newsData => <NewsArticle key={newsData.id} data={newsData}/>)
         }
       </main>
     </section>

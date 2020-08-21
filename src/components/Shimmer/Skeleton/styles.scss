@@ -1,9 +1,5 @@
 @import '../../../index.scss';
 
-// skeleton specific stuff
-$block-height: 15px;
-$light-grey: lighten($grey, 25%);
-
 .shimmer  {
   display: flex;
   flex-direction: column;
@@ -24,6 +20,7 @@ $light-grey: lighten($grey, 25%);
   }
 
   &__title {
+    width: 100%;
     font-size: 2rem;
     margin-bottom: 3rem;
     height: $block-height;
@@ -58,20 +55,8 @@ $light-grey: lighten($grey, 25%);
     animation: shimmer 1.2s ease-in-out infinite;
   }
 
-  a.btn {
+  &__btn {
     border: none;
     animation: shimmer 1.2s ease-in-out infinite;
-  }
-}
-
-
-
-@keyframes shimmer {
-  0% {
-    background-color: lighten($grey, 30%);
-  }
-
-  100% {
-    background-color: lighten($grey, 25%);
   }
 }

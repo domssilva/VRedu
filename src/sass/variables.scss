@@ -4,8 +4,11 @@ $orange: #EF233C;
 $white: #EDF2F4;
 $grey: #8D99AE;
 $blue: #2B2D42;
+$light-grey: lighten($grey, 25%);
+
 $nav-height: 5.5rem;
 $radius: 10px;
+$block-height: 15px;
 $block-height: 15px;
 
 // navbar dropdown specific

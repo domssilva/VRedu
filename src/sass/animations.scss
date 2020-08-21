@@ -1,0 +1,30 @@
+
+@keyframes shimmer {
+  0% {
+    background-color: lighten($grey, 30%);
+  }
+
+  100% {
+    background-color: lighten($grey, 25%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: $nav-height;
+  }
+
+  100% {
+    top: -30rem;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: -30rem;
+  }
+
+  100% {
+    top: $nav-height;
+  }
+}
