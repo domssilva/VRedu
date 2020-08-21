@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import VideosContainer from '../../components/VideosContainer';
 import FilterResults from '../../components/FilterResults';
@@ -9,6 +9,8 @@ import './styles.scss';
 const Home = () => {
 
   const [activeFilter, setActiveFilter] = useState(null);
+  const [carouselVideoQtd, setCarouselVideoQtd] = useState(3);
+  const [windowSize, setWindowSize] = useState({});
 
   function handleFilterClick(filterName) {
 
@@ -43,6 +45,44 @@ const Home = () => {
     return filteredVideos;
   }
 
+  
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    window.addEventListener('resize', handleResize);
+  }, []);
+  
+  useEffect(() => {
+    /* MEDIA QUERIES
+      @media (max-width: 600px)
+      @media (max-width: 900px)
+      @media (max-width: 1200px)
+      @media (min-width: 1800px)
+   */
+
+    if (windowSize.width > 1300) {
+      setCarouselVideoQtd(4);
+    }
+
+    if (windowSize.width > 800) {
+      setCarouselVideoQtd(3);
+    }
+
+    if (windowSize.width < 800) {
+      setCarouselVideoQtd(2);
+    }
+
+    if (windowSize.width < 600) {
+      setCarouselVideoQtd(1);
+    }
+
+  }, [windowSize]);
+
   return (
     <section className="container">
 
@@ -65,7 +105,7 @@ const Home = () => {
       <section className="category">
         {
           (activeFilter === null) ?
-          categories.map(category => <VideosContainer category={category}/>)
+          categories.map(category => <VideosContainer category={category} carouselVideoQtd={carouselVideoQtd}/>)
           :
           <FilterResults activeFilter={activeFilter} videos={getFilteredVideos()}/>
         }
