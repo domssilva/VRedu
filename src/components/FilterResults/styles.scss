@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.category {
+  .filtered {
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

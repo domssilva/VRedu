@@ -45,16 +45,39 @@ const Home = () => {
     return filteredVideos;
   }
 
+  function updateWindowSize() {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  }
   
   useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
     
-    window.addEventListener('resize', handleResize);
+    updateWindowSize();
+    // hack to resize carousel
+    setTimeout(() => {
+      setActiveFilter('xr');
+      setActiveFilter(null);
+    }, 1);
+    // hack to resize carousel
+    window.addEventListener('resize', updateWindowSize);
+
+    if (windowSize.width > 1300) {
+      setCarouselVideoQtd(4);
+    }
+
+    if (windowSize.width > 800) {
+      setCarouselVideoQtd(3);
+    }
+
+    if (windowSize.width < 800) {
+      setCarouselVideoQtd(2);
+    }
+
+    if (windowSize.width < 600) {
+      setCarouselVideoQtd(1);
+    }
   }, []);
   
   useEffect(() => {

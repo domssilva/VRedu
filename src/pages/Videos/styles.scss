@@ -10,7 +10,6 @@
   margin: 5rem 0 10rem 0;
 }
 
-
 .category {
   display: flex;
   flex-direction: column;
@@ -127,6 +126,12 @@
       background: $grey;
       border-left: 3rem solid $grey;
       border-right: 3rem solid $orange;
+
+      @include respond(phone){
+        border: none;
+        background-color: $orange;
+        color: $white;
+      }
     }
     
     &:active,
@@ -136,6 +141,12 @@
       border-left: 3rem solid whitesmoke;
       border-right: 3rem solid $orange;
       box-shadow: 0 1rem 2rem rgba($black, .6);
+
+      @include respond(phone){
+        border: none;
+        background-color: $orange;
+        color: $white;
+      }
     }
 
     @include respond(phone){
