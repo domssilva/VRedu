@@ -44,7 +44,7 @@ const Resources = () => {
           <div className='container__row-tables'>
             <TableCol title='Game Engine'>
               <TableRow type='text' text='Unreal Engine'/>  
-              <TableRow type='text' text='Unity'/>  
+              <TableRow type='text' text='Unity'/>   
               <TableRow type='text' text='Godot'/>  
             </TableCol>
             <TableCol title='Main Language'>
@@ -61,12 +61,14 @@ const Resources = () => {
           <div className='container__row-tables mt'>
           <TableCol title='Introductory Youtube Playlists'>
               <TableRow type='link' link='https://www.youtube.com/playlist?list=PLHSMxXn4v-aGhuRxxSBVPqykMjDiRyGrJ' text='Unreal Engine 4'/>
-              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6' text='Unity3d'/>
+              <TableRow type='link' link='https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6' text='Unity'/>
+              <TableRow type='link' link='https://blogs.unity3d.com/2020/06/23/learn-premium-is-now-available-to-everyone-at-no-cost-forever/' text='Unity Premium is available for free'/>
               <TableRow type='link' link='https://www.youtube.com/playlist?list=PLsk-HSGFjnaFwmOFrfD4gQQqvgvEUielY' text='Godot3'/>
             </TableCol>
           <TableCol title='VR Playlists'>
             <TableRow type='link' link='https://www.youtube.com/playlist?list=PLZlv_N0_O1gZaB0IgQEnO9WOXYRx3Puvo' text='AR &amp; VR Unreal Engine'/>
             <TableRow type='link' link='https://www.youtube.com/playlist?list=PLrk7hDwk64-a_gf7mBBduQb3PEBYnG4fU' text='Unity XR toolkit'/>
+            <TableRow type='link' link='https://learn.unity.com/search?k=%5B%22q%3Avr%22%5D' text='Unity Learn Premium'/>
             <TableRow type='link' link='https://www.youtube.com/playlist?list=PLe63S5Eft1KYGqgkx9I70vfWmvvOZ7apF' text='Godot Desktop VR tutorials'/>
             </TableCol>
           </div>          

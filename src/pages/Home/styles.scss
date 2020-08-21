@@ -1,18 +1,11 @@
-// variables
-$black: #111;
-$red: #D80032;
-$orange: #EF233C;
-$white: #EDF2F4;
-$grey: #8D99AE;
-$blue: #2B2D42;
-$nav-height: 5.5rem;
+@import '../../index.scss';
 
 .home {
   height: 100vh;
   width: 100%;
   background-color: $black;
-  background-position: top left;
-  background-size: contain;
+  background-position: top;
+  background-size: cover;
   background-image: 
     linear-gradient(90deg, rgba($red, .2), rgba($black, .6)),
     url('../../media/vrman.jpg');
@@ -27,7 +20,7 @@ $nav-height: 5.5rem;
 
   &__intro {
     position: relative;
-    left: 30rem;
+    left: 25%;
     width: 60rem;
     padding: 3rem 4rem;
     line-height: 1.5;

@@ -1,11 +1,4 @@
-// variables
-$black: #111;
-$red: #D80032;
-$orange: #EF233C;
-$white: #EDF2F4;
-$grey: #8D99AE;
-$blue: #2B2D42;
-$block-height: 15px;
+@import '../../index.scss';
 
 .Modal {
   position: absolute;
