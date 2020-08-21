@@ -2,19 +2,10 @@ import React from 'react';
 
 import './styles.scss';
 
-const TableCol = ({title, children}) => {
-
-  function stripUrl(url) {
-    url = url.replace(/(^\w+:|^)\/\//, '');
-    url = url.replace(/(\/$)/, '');
-    url = url.replace('.com', '');
-    url = url.replace('/podcast', '');
-    url = url.replace(/^www./, '');
-    return url;
-  }
+const TableCol = ({title, newClass, children}) => {
 
   return (
-    <table>
+    <table className={newClass}>
       <thead>
         <th>
           {title}

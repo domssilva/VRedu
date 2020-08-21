@@ -34,7 +34,9 @@ const Dropdown = () => {
 
   return (
     <section className='dropdown'>
-        <Backdrop closeDropdown={closeDropdown}/>
+        {
+          open ? <Backdrop closeDropdown={closeDropdown}/> : null
+        }
         <FaAlignJustify onClick={handleDropdown} className='dropdown__icon'/>
         <div className={`dropdown__container ${(open ? '' : 'closed')}`}>
           <Link className='dropdown__item' to='/' title='vr news'>Home</Link>

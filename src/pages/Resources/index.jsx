@@ -52,7 +52,7 @@ const Resources = () => {
               <TableRow type='link' link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' text='C#'/>
               <TableRow type='link' link='https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_advanced.html' text='GDScript'/>
             </TableCol>
-            <TableCol title='Documentation'>
+            <TableCol title='Documentation' newClass='desktop'>
               <TableRow type='link' link='https://docs.unrealengine.com/en-US/index.html' text='index'/>
               <TableRow type='link' link='https://docs.unity3d.com/Manual/index.html' text='index'/>
               <TableRow type='link' link='https://docs.godotengine.org/en/stable/index.html' text='index'/>
@@ -123,13 +123,13 @@ const Resources = () => {
               <TableRow type='link' link='https://www.youtube.com/playlist?list=PLWKjhJtqVAbluXJKKbCIb4xd7fcRkpzoz' text='CS50 Introduction to game development'/>
               <TableRow type='link' link='https://www.youtube.com/playlist?list=PL8bmgwX9eBPGUZXoy3SVplvJMiHkzP8T_' text='Research and Talks about VR and MR'/>
             </TableCol>
-            <TableCol title='Institute'>
+            <TableCol title='Institute' newClass='desktop'>
               <TableRow type='text' text='IITM &amp; UIUC'/>
               <TableRow type='text' text='UC Davis'/>
               <TableRow type='text' text='Harvard'/>
               <TableRow type='text' text='UW Reality Lab'/>
             </TableCol>
-            <TableCol title='website'>
+            <TableCol title='website' newClass='desktop'>
               <TableRow type='link' link='https://nptel.ac.in/content/syllabus_pdf/106106138.pdf' text='Syllabus'/>
               <TableRow type='link' link='https://www.cs.ucdavis.edu/~ma/ECS175/syllabus.html' text='Syllabus'/>
               <TableRow type='link' link='https://cs50.harvard.edu/games/2018/' text='cs50 opencourse'/>
@@ -153,7 +153,7 @@ const Resources = () => {
                   ))
                 }
             </TableCol>
-            <TableCol title='category'>
+            <TableCol title='category' newClass='desktop'>
                 {
                   discords.map(server => (
                     <tr>
@@ -164,7 +164,7 @@ const Resources = () => {
                   ))
                 }
             </TableCol>
-            <TableCol title='reddit'>
+            <TableCol title='reddit' newClass='desktop'>
               <TableRow type='link' link='https://www.reddit.com/r/learnVRdev/' text='r/learnVRdev'/>
               <TableRow/>
               <TableRow/>

@@ -11,4 +11,8 @@ table {
   background: $white;
   border-collapse: collapse;
   box-shadow: 0 1rem 1rem rgba($black, .2);
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
