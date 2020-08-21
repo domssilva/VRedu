@@ -45,6 +45,14 @@ const Home = () => {
     return filteredVideos;
   }
 
+  function refreshCarouselHack() {
+    // Using this until I figure out something better
+    setTimeout(() => {
+      setActiveFilter('xr');
+      setActiveFilter(null);
+    }, 1);
+  }
+
   function updateWindowSize() {
     setWindowSize({
       width: window.innerWidth,
@@ -55,12 +63,7 @@ const Home = () => {
   useEffect(() => {
     
     updateWindowSize();
-    // hack to resize carousel
-    setTimeout(() => {
-      setActiveFilter('xr');
-      setActiveFilter(null);
-    }, 1);
-    // hack to resize carousel
+    refreshCarouselHack();
     window.addEventListener('resize', updateWindowSize);
 
     if (windowSize.width > 1300) {
@@ -103,6 +106,8 @@ const Home = () => {
     if (windowSize.width < 600) {
       setCarouselVideoQtd(1);
     }
+
+    refreshCarouselHack();
 
   }, [windowSize]);
 

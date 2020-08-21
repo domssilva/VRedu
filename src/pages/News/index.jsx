@@ -24,7 +24,10 @@ const News = ({ isLoading }) => {
       fetch(req)
       .then(res => res.json())
       .then(data => setVrNews(data.news))
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.log(error);
+        setVrNews(newsDummyData);
+      });
     } else {
       setVrNews(newsDummyData);
     }

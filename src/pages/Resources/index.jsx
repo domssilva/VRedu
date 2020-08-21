@@ -3,6 +3,7 @@ import React from 'react';
 import TableCol from '../../components/TableCol';
 import TableRow from '../../components/TableRow';
 import { FaDiscord, FaMicrophone, FaGithub, FaBookOpen, FaCommentAlt, FaChalkboardTeacher, FaCode } from 'react-icons/fa';
+import { SiBlender } from 'react-icons/si';
 import discords from '../../data/discords.data';
 import './styles.scss';
 
@@ -139,6 +140,36 @@ const Resources = () => {
         </div>
 
         <div className="container__row">
+          <h3 className="container__row-title" id="repos">
+            <span>github repos</span>
+            <FaGithub className="icon"/>
+          </h3>
+          <div className="container__row-tables">
+            <TableCol title='useful repositories'>
+                <TableRow type='link' link='https://github.com/misslivirose/learnvr' text='learnvr'/>
+                <TableRow type='link' link='https://github.com/googlevr/gvr-unity-sdk' text='Google VR SDK for Unity'/>
+                <TableRow type='link' link='https://github.com/Corysia/Unity-Oculus-Example' text='Unity-Oculus-Example'/>
+                <TableRow type='link' link='https://github.com/ValveSoftware/openvr' text='OpenVR SDK'/>
+            </TableCol>
+          </div>
+        </div>
+
+        <div className="container__row">
+          <h3 className="container__row-title" id="blender 2.8">
+            <span>blender</span>
+            <SiBlender className="icon"/>
+          </h3>
+          <div className="container__row-tables">
+            <TableCol title='youtube playlist'>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vs_eSJUQPxBRaDS8PrVmIri' text='Blender for beginners'/>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vvv3ZpWJYvV5Tmvo7ISO-NN' text='get good at blender'/>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vvHr6RMoXrZSMVqmOKlqbBR' text='beginners guide to animation in'/>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vtnU_TaZob7QD6Q8d9C9Ki7' text='nodes 4 noobs'/>
+            </TableCol>
+          </div>
+        </div>
+
+        <div className="container__row">
           <h3 className="container__row-title" id="communities">
             <span>communities</span>
             <FaCommentAlt className="icon"/>
@@ -171,36 +202,6 @@ const Resources = () => {
               <TableRow/>
               <TableRow/>
               <TableRow/>
-            </TableCol>
-          </div>
-        </div>
-
-        <div className="container__row">
-          <h3 className="container__row-title" id="repos">
-            <span>github repos</span>
-            <FaGithub className="icon"/>
-          </h3>
-          <div className="container__row-tables">
-            <TableCol title='useful repositories'>
-                <TableRow type='link' link='https://github.com/misslivirose/learnvr' text='learnvr'/>
-                <TableRow type='link' link='https://github.com/googlevr/gvr-unity-sdk' text='Google VR SDK for Unity'/>
-                <TableRow type='link' link='https://github.com/Corysia/Unity-Oculus-Example' text='Unity-Oculus-Example'/>
-                <TableRow type='link' link='https://github.com/ValveSoftware/openvr' text='OpenVR SDK'/>
-            </TableCol>
-          </div>
-        </div>
-
-        <div className="container__row">
-          <h3 className="container__row-title" id="blender 2.8">
-            <span>blender</span>
-            <FaGithub className="icon"/>
-          </h3>
-          <div className="container__row-tables">
-            <TableCol title='youtube playlist'>
-                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vs_eSJUQPxBRaDS8PrVmIri' text='Blender for beginners'/>
-                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vvv3ZpWJYvV5Tmvo7ISO-NN' text='get good at blender'/>
-                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vvHr6RMoXrZSMVqmOKlqbBR' text='beginners guide to animation in'/>
-                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vtnU_TaZob7QD6Q8d9C9Ki7' text='nodes 4 noobs'/>
             </TableCol>
           </div>
         </div>

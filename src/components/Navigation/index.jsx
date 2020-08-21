@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Dropdown from '../Dropdown';
 
+import vrLogo from '../../media/vr.png';
 import './styles.scss';
 
 export default function Navigation() {
@@ -17,6 +18,9 @@ export default function Navigation() {
         <Link to='/resources' title='start learning!'>Resources</Link>
       </div>
       <div className='navigation__right mobile'>
+        <Link to='/'>
+          <img src={vrLogo} className='vr__logo' alt="vr logo"/>
+        </Link>
         <Dropdown/>
       </div>
     </nav>

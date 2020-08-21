@@ -7,7 +7,7 @@
 
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   z-index: 10;
 
   display: flex;
@@ -41,9 +41,23 @@
     }
   }
 
-  // mobile media query
+  &__right.mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
   @include respond(phone) {
     padding: 0;
     align-items: flex-start;
   }
+}
+
+.vr__logo {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
 }

@@ -21,7 +21,11 @@
 
   &__title {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    color: darken($grey, 55%);
+    border-bottom: 2px dashed rgba($black, .1);
   }
 
   &__body {
