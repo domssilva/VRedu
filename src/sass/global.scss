@@ -33,3 +33,18 @@ button {
 .logo {
   color: $red;
 }
+
+// desktop first layout
+.mobile {
+  @include hide;
+}
+
+@include respond(phone) {
+  .desktop {
+    @include hide;
+  }
+
+  .mobile {
+    @include unhide;
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../index.scss';
+
+.dropdown {
+  position: relative;
+
+  &__icon {
+    margin-right: 1.2rem;
+    margin-top: 1.2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: darken($grey, 50%);
+  }
+
+  &__container {
+    //@include unhide;
+
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: $nav-height;
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    animation: 0.35s slideDown $dropdownCubicBezier forwards;
+  }
+
+  &__item {
+    width: 100%;
+    padding: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    transition: all .3s;
+
+    &:hover {
+      background-color: lighten($grey, 32%);
+    }
+  }
+
+  &__container.closed {
+    //@include hide;
+    animation: 0.35s slideUp $dropdownCubicBezier forwards;
+    // slide up animation
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: $nav-height;
+  }
+
+  100% {
+    top: -30rem;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: -30rem;
+  }
+
+  100% {
+    top: $nav-height;
+  }
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: $nav-height;
+  z-index: 1;
+}

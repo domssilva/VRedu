@@ -11,7 +11,7 @@
     url('../../media/vrman.jpg');
 
   font-weight: 400;
-  padding: 4rem 8rem;
+  padding: 3rem 6rem;
   color: $white;
 
   display: flex;
@@ -21,13 +21,39 @@
   &__intro {
     position: relative;
     left: 25%;
-    width: 60rem;
+    width: 70%;
+    min-width: 40rem;
+    max-width: 50rem;
     padding: 3rem 4rem;
     line-height: 1.5;
     border-radius: 5px;
     font-size: 3rem;
     background: rgba($white, .8);
     color: $black;
+
+    @include respond(tab-port) {
+      font-size: 2.6rem;
+      padding: 1.5rem 3rem;
+      left: 5%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      position: unset;
+      margin-top: $nav-height;
+      font-size: 2rem;
+    }
+  }
+
+  @include respond(phone) {
+    align-items: flex-start;
+    padding: 0;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: 
+    linear-gradient(180deg, $black, rgba($red, .8)),
+    url('../../media/vrman.jpg');
   }
 }
 

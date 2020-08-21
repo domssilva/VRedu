@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   position: absolute;
+  z-index: 10;
 
   display: flex;
   align-items: center;
@@ -16,11 +17,16 @@
   border-bottom: 3px solid $orange;
   box-shadow: 0 1rem 1rem rgba($black, 0.3);
 
-  .logo {
+  &__logo {
     cursor: pointer;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 700;
+
+    @include respond(phone) {
+      @include hide;
+    }
+
   }
 
   &__left {
@@ -33,5 +39,11 @@
     a:not(:last-of-type) {
       margin-right: 2rem;
     }
+  }
+
+  // mobile media query
+  @include respond(phone) {
+    padding: 0;
+    align-items: flex-start;
   }
 }
