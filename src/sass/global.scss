@@ -40,6 +40,11 @@ button {
 }
 
 @include respond(phone) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   .desktop {
     @include hide;
   }

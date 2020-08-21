@@ -1,5 +1,6 @@
 import React from 'react';
 
+// default photos for articles without images (randomly sorted)
 import randomArticleImage0 from '../../media/article-default/random-0.jpg';
 import randomArticleImage1 from '../../media/article-default/random-1.jpg';
 import randomArticleImage2 from '../../media/article-default/random-2.jpg';
@@ -10,6 +11,13 @@ import randomArticleImage5 from '../../media/article-default/random-4.jpg';
 import './styles.scss';
 
 const NewsArticle = ({ data }) => {
+
+  const {
+    title,
+    url,
+    image,
+    description
+  } = data;
 
   function getRandomPic() {
     /*
@@ -34,20 +42,28 @@ const NewsArticle = ({ data }) => {
     return randomPics[randomBetween0and5()];
   }
 
+  function formatArticle(txt) {
+    // set maximum article length to 200 characters.
+    const maxArticleLength = 200;
+    let formatted = txt.substring(0, maxArticleLength);
+
+    return formatted.endsWith('...') ? formatted : formatted + '...';
+  }
+
   return (
     <article className="article">
       <div className="article__top">
-        <h2 className="article__title">{data.title}</h2>
+        <h2 className="article__title">{title}</h2>
       </div>
       <div className="article__body">
         <img 
-          src={(data.image === 'None' ? getRandomPic() : data.image)}
-          className={(data.image === 'None' ? 'article__img article__img--empty' : 'article__img')} 
+          src={(image === 'None' ? getRandomPic() : image)}
+          className={(image === 'None' ? 'article__img article__img--empty' : 'article__img')} 
           alt="article"
         />
-        <p className="article__txt">{data.description}</p>
+        <p className="article__txt">{formatArticle(description)}</p>
       </div>
-      <a href={data.url} className="btn" target="_blank" rel="noopener noreferrer">read full article</a>
+      <a href={url} className="btn" target="_blank" rel="noopener noreferrer">read full article</a>
     </article>
   )
 }

@@ -30,6 +30,7 @@
     justify-content: center;
     width: 100%;
     background: $white;
+    margin-bottom: 2rem;
   }
 
   &__txt {
@@ -47,6 +48,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  @include respond(tab-port) {
+    width: 600px;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 3rem 2rem;
+
+    &__body {
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    &__txt {
+      width: 100%;
+    }
+
+    &__img {
+      margin: 0;
     }
   }
 }

@@ -6,7 +6,7 @@ const Skeleton = () => {
   return (
   <article className="shimmer">
       <div className="shimmer__top">
-        <span className="shimmer__title"></span>
+        <div className="shimmer__title"></div>
       </div>
       <div className="shimmer__body">
         <div className='shimmer__img'/>
@@ -17,7 +17,7 @@ const Skeleton = () => {
           <p className="shimmer__txt-p"></p>
         </div>
       </div>
-      <span className="shimer__btn"></span>
+      <div className="shimmer__btn"></div>
     </article>
   )
 }
