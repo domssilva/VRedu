@@ -2,15 +2,15 @@ import React from 'react';
 
 import YoutubeVideo from '../../components/YoutubeVideo';
 
-const FilterResults = ({activeFilter, videoIds}) => {
+const FilterResults = ({activeFilter, videos}) => {
   return (
     <section className="category__unit">
       <section className="category__description">
         <h2>{activeFilter}'s results</h2>
       </section>
       <section className="category__results">
-        {videoIds.map(id => (
-          <YoutubeVideo videoid={id}/>
+        {videos.map(video => (
+          <YoutubeVideo video={video}/>
         ))}
       </section>
     </section>

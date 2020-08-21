@@ -36,7 +36,7 @@ const Home = () => {
     categories.map(category => {
       category.videos.map(video => {
         if (video.tag === activeFilter) {
-          filteredVideos.push(video.id);
+          filteredVideos.push(video);
         }
       });
     });
@@ -67,7 +67,7 @@ const Home = () => {
           (activeFilter === null) ?
           categories.map(category => <VideosContainer category={category}/>)
           :
-          <FilterResults activeFilter={activeFilter} videoIds={getFilteredVideos()}/>
+          <FilterResults activeFilter={activeFilter} videos={getFilteredVideos()}/>
         }
       </section>
     </section>
