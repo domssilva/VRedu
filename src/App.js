@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

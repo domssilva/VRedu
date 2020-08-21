@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 import { FaAlignJustify } from 'react-icons/fa'
 
@@ -12,6 +12,13 @@ const Backdrop = ({closeDropdown}) => (
 const Dropdown = () => {
 
   const [open, setOpen] = useState(false);
+  const history = useHistory();
+  
+  function closeDropdownWhenRouteChanges() {
+    history.listen((location, action) => {
+      closeDropdown();
+    });
+  }
 
   function handleDropdown() {
     setOpen(!open);
@@ -20,6 +27,10 @@ const Dropdown = () => {
   function closeDropdown() {
     setOpen(false);
   }
+
+  useEffect(() => {
+    closeDropdownWhenRouteChanges();
+  }, []);
 
   return (
     <section className='dropdown'>
