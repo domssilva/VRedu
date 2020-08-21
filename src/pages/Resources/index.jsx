@@ -29,6 +29,9 @@ const Resources = () => {
             <li>
               <a href="#repos">github</a>
             </li>
+            <li>
+              <a href="#repos">blender</a>
+            </li>
           </ul>
       </section>
 
@@ -181,6 +184,21 @@ const Resources = () => {
                 <TableRow type='link' link='https://github.com/googlevr/gvr-unity-sdk' text='Google VR SDK for Unity'/>
                 <TableRow type='link' link='https://github.com/Corysia/Unity-Oculus-Example' text='Unity-Oculus-Example'/>
                 <TableRow type='link' link='https://github.com/ValveSoftware/openvr' text='OpenVR SDK'/>
+            </TableCol>
+          </div>
+        </div>
+
+        <div className="container__row">
+          <h3 className="container__row-title" id="blender 2.8">
+            <span>blender</span>
+            <FaGithub className="icon"/>
+          </h3>
+          <div className="container__row-tables">
+            <TableCol title='youtube playlist'>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vs_eSJUQPxBRaDS8PrVmIri' text='Blender for beginners'/>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vvv3ZpWJYvV5Tmvo7ISO-NN' text='get good at blender'/>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vvHr6RMoXrZSMVqmOKlqbBR' text='beginners guide to animation in'/>
+                <TableRow type='link' link='https://www.youtube.com/playlist?list=PLn3ukorJv4vtnU_TaZob7QD6Q8d9C9Ki7' text='nodes 4 noobs'/>
             </TableCol>
           </div>
         </div>

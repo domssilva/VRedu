@@ -4,9 +4,10 @@ import { AiOutlineFullscreen ,AiFillYoutube } from 'react-icons/ai';
 import YoutubeVideoModal from '../YoutubeVideoModal';
 import './styles.scss';
 
-const YoutubeVideo = ({ videoid, name }) => {
+const YoutubeVideo = ({ video }) => {
 
   const [modalIsOpen, setIsOpen] = useState(false);
+  const maxTitleLength = 25; // trim youtube titles to 25 characters
 
   function openModal() {
     setIsOpen(true);
@@ -16,30 +17,32 @@ const YoutubeVideo = ({ videoid, name }) => {
     setIsOpen(false);
   }
 
-  const iframeLink = `https://www.youtube.com/embed/${videoid}`;
-
   return (
     <>
       <YoutubeVideoModal 
-        videoLink={iframeLink}
-        videoId={videoid}
+        videoId={video.id}
         modalIsOpen={modalIsOpen} 
         closeModal={closeModal}
       />
       <div className='youtube__video'>
         <div className='youtube__tab'>
-          <a href={`https://www.youtube.com/watch?v=${videoid}`} target='_blank' rel='noopener noreferrer'>
-            <AiFillYoutube className='youtube__icon'/>
-          </a>
-          <AiOutlineFullscreen onClick={openModal} className='youtube__icon'/>
+          <div className="left">
+            <span className="youtube__tab-title">{video.title.substring(0, maxTitleLength)}...</span>
+          </div>
+          <div className="right">
+            <a href={`https://www.youtube.com/watch?v=${video.id}`} target='_blank' rel='noopener noreferrer'>
+              <AiFillYoutube className='youtube__icon'/>
+            </a>
+            <AiOutlineFullscreen onClick={openModal} className='youtube__icon'/>
+          </div>
         </div>
         <iframe 
-          title={name}
+          title={video.title}
           frameBorder='0'
           width='100%'
           height='100%'
           allow='autoplay'
-          srcdoc={`<html style='overflow: hidden;'><a href=https://www.youtube.com/embed/${videoid}?autoplay=1><img style='width: 100%; height: 100%; object-fit: cover;' src=https://img.youtube.com/vi/${videoid}/hqdefault.jpg></a></html>`}
+          srcdoc={`<html style='overflow: hidden;'><a href=https://www.youtube.com/embed/${video.id}?autoplay=1><img style='width: 100%; height: 100%; object-fit: cover;' src=https://img.youtube.com/vi/${video.id}/hqdefault.jpg></a></html>`}
           allowFullScreen
         />
       </div>
