@@ -17,7 +17,7 @@ export default function Navigation() {
         <Link to='/videos' title='watch vr content'>Videos</Link>
         <Link to='/resources' title='start learning!'>Resources</Link>
       </div>
-      <div className='navigation__right mobile'>
+      <div className='navigation__right mobile' id='hide'>
         <Link to='/'>
           <img src={vrLogo} className='vr__logo' alt="vr logo"/>
         </Link>
