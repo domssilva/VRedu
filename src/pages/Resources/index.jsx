@@ -178,7 +178,7 @@ const Resources = () => {
             <TableCol title='discord'>
                 {
                   discords.map(server => (
-                    <TableRow type='svg-link' link={server.invite} text={server.name}>
+                    <TableRow key={server.invite} type='svg-link' link={server.invite} text={server.name}>
                       <FaDiscord/>
                     </TableRow>
                   ))
@@ -187,7 +187,7 @@ const Resources = () => {
             <TableCol title='category' newClass='desktop'>
                 {
                   discords.map(server => (
-                    <tr>
+                    <tr key={server.name}>
                       <td>
                         <span>{server.category}</span>
                       </td>

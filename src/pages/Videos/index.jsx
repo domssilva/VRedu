@@ -108,6 +108,7 @@ const Home = () => {
           {
             filters.map(filterName => (
             <button 
+              key={filterName}
               className={(activeFilter === filterName) ? "filter__btn active" : "filter__btn"}
               onClick={() => handleFilterClick(filterName)}
             >
@@ -121,7 +122,7 @@ const Home = () => {
       <section className="category">
         {
           (activeFilter === null) ?
-          categories.map(category => <VideosContainer category={category} carouselVideoQtd={carouselVideoQtd}/>)
+          categories.map(category => <VideosContainer key={category.id} category={category} carouselVideoQtd={carouselVideoQtd}/>)
           :
           <FilterResults activeFilter={activeFilter} videos={getFilteredVideos()}/>
         }

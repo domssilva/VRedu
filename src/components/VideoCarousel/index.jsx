@@ -10,6 +10,7 @@ const VideoCarousel = ({category, carouselVideoQtd}) => {
 
   return (
         <Splide 
+          key={category.id}
           className="category__row"
           options={{
             rewind: false,
@@ -25,8 +26,8 @@ const VideoCarousel = ({category, carouselVideoQtd}) => {
         >
           {
             category.videos.map(video => (
-              <SplideSlide>
-                <YoutubeVideo key={video.id} title={category.name} video={video}/>
+              <SplideSlide key={video.id}>
+                <YoutubeVideo title={category.name} video={video}/>
               </SplideSlide>
             ))
           }

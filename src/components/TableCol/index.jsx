@@ -7,9 +7,11 @@ const TableCol = ({title, newClass, children}) => {
   return (
     <table className={newClass}>
       <thead>
-        <th>
-          {title}
-        </th>
+        <tr>
+          <th>
+            {title}
+          </th>
+        </tr>
       </thead>
       <tfoot>
         {children}
