@@ -66,19 +66,19 @@ const Home = () => {
     updateWindowSize();
     window.addEventListener('resize', updateWindowSize);
 
-    if (windowSize.width > 1300) {
+    if (windowSize.width > 1300 && carouselVideoQtd !== 4) {
       setCarouselVideoQtd(4);
     }
 
-    if (windowSize.width > 800) {
+    if (windowSize.width > 800 && carouselVideoQtd !== 3) {
       setCarouselVideoQtd(3);
     }
 
-    if (windowSize.width < 800) {
+    if (windowSize.width < 800 && carouselVideoQtd !== 2) {
       setCarouselVideoQtd(2);
     }
 
-    if (windowSize.width < 600) {
+    if (windowSize.width < 600 && carouselVideoQtd !== 1) {
       setCarouselVideoQtd(1);
     }
   }, []);
@@ -91,19 +91,19 @@ const Home = () => {
       @media (min-width: 1800px)
    */
 
-    if (windowSize.width > 1300) {
+  if (windowSize.width > 1300 && carouselVideoQtd !== 4) {
       setCarouselVideoQtd(4);
     }
 
-    if (windowSize.width > 800) {
+    if (windowSize.width > 800 && carouselVideoQtd !== 3) {
       setCarouselVideoQtd(3);
     }
 
-    if (windowSize.width < 800) {
+    if (windowSize.width < 800 && carouselVideoQtd !== 2) {
       setCarouselVideoQtd(2);
     }
 
-    if (windowSize.width < 600) {
+    if (windowSize.width < 600 && carouselVideoQtd !== 1) {
       setCarouselVideoQtd(1);
     }
 

@@ -6,11 +6,22 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  @include respond(tab-port) {
+    overflow-x: hidden;
+  }
+}
+
 body {
   margin: 0;
   background: $blue;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include respond(tab-port) {
+    position: relative
+  }
 }
 
 a {
