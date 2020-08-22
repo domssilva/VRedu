@@ -50,6 +50,15 @@ const Home = () => {
       width: window.innerWidth,
       height: window.innerHeight,
     });
+
+    carouselHack();
+  }
+
+  function carouselHack() {
+    setTimeout(() => {
+      setActiveFilter('xr');
+      setActiveFilter(null);
+    }, 1);
   }
   
   useEffect(() => {
@@ -97,11 +106,11 @@ const Home = () => {
     if (windowSize.width < 600) {
       setCarouselVideoQtd(1);
     }
+
   }, [windowSize]);
 
   return (
     <section className="container">
-
       <article className="filter">
         <h3>Filters:</h3>
         <div className="filter__container">

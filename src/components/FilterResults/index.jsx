@@ -12,7 +12,7 @@ const FilterResults = ({activeFilter, videos}) => {
       </section>
       <section className="category__results filtered">
         {videos.map(video => (
-          <YoutubeVideo video={video}/>
+          <YoutubeVideo key={video.id} video={video}/>
         ))}
       </section>
     </section>
