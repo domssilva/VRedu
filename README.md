@@ -22,4 +22,4 @@ This is my collection of free resources to dive in the metaverse.
 Enjoy :) 
 
 # 💼 Feel free to contribute with good resources
-**[[Share knowledge](https://github.com/domssilva/VRedu/issues/new)]**
+**[[Share knowledge](https://github.com/domssilva/VRedu/issues/new?assignees=&labels=resource&template=vr-edu.md&title=)]**
