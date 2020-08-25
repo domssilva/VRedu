@@ -4,9 +4,7 @@ import './styles.scss';
 
 const Error = () => {
   return (
-    <div>
-      Error page
-    </div>
+    <div class="error"></div>
   )
 }
 

@@ -42,7 +42,7 @@ const YoutubeVideo = ({ video }) => {
           width='100%'
           height='100%'
           allow='autoplay'
-          srcDoc={`<html style='overflow: hidden;'><a href=https://www.youtube.com/embed/${video.id}?autoplay=1><img style='width: 100%; height: 100%; object-fit: cover;' src=https://img.youtube.com/vi/${video.id}/hqdefault.jpg></a></html>`}
+          srcDoc={`<html style='overflow: hidden; width: 100vw; height: vh;'><a href=https://www.youtube.com/embed/${video.id}?autoplay=1><img style='width: 100%; height: 100%; object-fit: cover;' src=https://img.youtube.com/vi/${video.id}/hqdefault.jpg></a></html>`}
         />
       </div>
     </>

@@ -41,10 +41,6 @@ button {
   cursor: pointer;
 }
 
-.logo {
-  color: $red;
-}
-
 // desktop first layout
 .mobile {
   @include hide;

@@ -11,7 +11,7 @@ const News = ({ isLoading }) => {
   const [vrNews, setVrNews] = useState([]);
 
   // if true, uses dummy data from a js file
-  const development = true;
+  const development = false;
 
   const apiKey = process.env.REACT_APP_API_TOKEN;
   const url = `https://api.currentsapi.services/v1/search?keywords=Virtual%20Reality&language=en&apiKey=${apiKey}`;

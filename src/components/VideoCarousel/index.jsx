@@ -6,7 +6,7 @@ import YoutubeVideo from '../../components/YoutubeVideo';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import './styles.scss';
 
-const VideoCarousel = ({category, carouselVideoQtd}) => {
+const VideoCarousel = ({category}) => {
 
   return (
         <Splide 
@@ -14,7 +14,7 @@ const VideoCarousel = ({category, carouselVideoQtd}) => {
           className="category__row"
           options={{
             rewind: false,
-            perPage: carouselVideoQtd,
+            perPage: 0,
             perMove: 1,
             pagination: false,
             lazyload: true,

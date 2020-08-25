@@ -73,8 +73,9 @@ const Resources = () => {
             <TableRow type='link' link='https://www.youtube.com/playlist?list=PLe63S5Eft1KYGqgkx9I70vfWmvvOZ7apF' text='Godot Desktop VR tutorials'/>
             </TableCol>
           </div>          
-          <div className='container__row-tables mt'>
-          <TableCol title='VR Development Youtube Channels'>
+          <div className='cont
+          ainer__row-tables mt'>
+          <TableCol newClass="table-center" title='VR Development Youtube Channels'>
               <TableRow type='link' link='https://www.youtube.com/channel/UCPJlesN59MzHPPCp0Lg8sLw' text='Valem'/>
               <TableRow type='link' link='https://www.youtube.com/c/VRDevSchool/videos' text='VR Dev School'/>
             </TableCol>
@@ -88,6 +89,7 @@ const Resources = () => {
             </h3>
           <div className="container__row-tables">
             <TableCol title='podcasts'>
+              <TableRow type='link' link='https://www.youtube.com/c/ENDGAMEpodcastVR/videos' text='ENDGAME'/>
               <TableRow type='link' link='http://voicesofvr.com/' text='voiceosofvr'/>
               <TableRow type='link' link='https://vrscout.com/podcast/' text='vrscout'/>
               <TableRow type='link' link='http://www.revvrstudios.com/' text='revvrstudios'/>
