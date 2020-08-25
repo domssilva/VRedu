@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
@@ -9,9 +9,6 @@ import Resources from './pages/Resources';
 import Error from './pages/Error';
 
 function App() {
-
-
-
   return (
     <>
       <Navigation/>

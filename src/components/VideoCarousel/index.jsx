@@ -14,14 +14,28 @@ const VideoCarousel = ({category}) => {
           className="category__row"
           options={{
             rewind: false,
-            perPage: 0,
-            perMove: 1,
+            perPage: 4,
+            perMove: 0,
             pagination: false,
-            lazyload: true,
+            lazyload: 'nearby',
             keyboard: 'focused',
             width: '100%',
             gap: '1.5rem',
             type: 'slide',
+            arrows: true,
+            easing: 'cubic-bezier(.42,.65,.27,.99)',
+            throttle: 100,
+            breakpoints: {
+              1200: {
+                perPage: 3,
+              },
+              900: {
+                perPage: 2,
+              },
+              600: {
+                perPage: 1,
+              }
+            }
           }}
         >
           {
