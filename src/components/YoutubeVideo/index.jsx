@@ -9,6 +9,8 @@ const YoutubeVideo = ({ video }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const maxTitleLength = 25; // trim youtube titles to 25 characters
 
+  const iframeSrcDoc = `<html style='display: flex; justify-content: center; align-items:center;'><a style='display: block; background-color: black;' href=https://www.youtube.com/embed/${video.id}?autoplay=1><img style='display: block; margin: auto;' src=https://img.youtube.com/vi/${video.id}/hqdefault.jpg></a></html>`;
+
   function openModal() {
     setIsOpen(true);
   }
@@ -20,8 +22,8 @@ const YoutubeVideo = ({ video }) => {
   return (
     <>
       <YoutubeVideoModal 
-        videoId={video.id}
         modalIsOpen={modalIsOpen} 
+        iframeSrcDoc={iframeSrcDoc}
         closeModal={closeModal}
       />
       <div className='youtube__video'>
@@ -42,7 +44,8 @@ const YoutubeVideo = ({ video }) => {
           width='100%'
           height='100%'
           allow='autoplay'
-          srcDoc={`<html style='overflow: hidden; width: 100vw; height: vh;'><a href=https://www.youtube.com/embed/${video.id}?autoplay=1><img style='width: 100%; height: 100%; object-fit: cover;' src=https://img.youtube.com/vi/${video.id}/hqdefault.jpg></a></html>`}
+          scrolling='no'
+          srcDoc={iframeSrcDoc}
         />
       </div>
     </>
