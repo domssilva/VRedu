@@ -10,22 +10,14 @@ import Error from './pages/Error';
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
 
   return (
     <>
       <Navigation/>
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/news">
-          <News isLoading={isLoading}/>
-        </Route>
+        <Route exact path="/news" component={News}/>
         <Route exact path="/videos" component={Videos}/>
         <Route exact path="/resources" component={Resources}/>
         <Route path="/" component={Error}/>
