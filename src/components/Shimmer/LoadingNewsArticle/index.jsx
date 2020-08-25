@@ -1,18 +1,23 @@
 import React from 'react';
-
+import { usePromiseTracker } from "react-promise-tracker";
 import Skeleton from '../Skeleton';
 
 const LoadingNewsArticle = () => {
-  return (
-    <>
-      <Skeleton/>
-      <Skeleton/>
-      <Skeleton/>
-      <Skeleton/>
-      <Skeleton/>
-      <Skeleton/>
-    </>
-  )
+  const { promiseInProgress } = usePromiseTracker();
+
+  return (promiseInProgress === true) ?
+    (
+      <>
+        <Skeleton/>
+        <Skeleton/>
+        <Skeleton/>
+        <Skeleton/>
+        <Skeleton/>
+        <Skeleton/>
+      </>
+    )
+      :
+    null 
 }
 
 export default LoadingNewsArticle;

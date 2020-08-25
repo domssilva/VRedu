@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { trackPromise } from "react-promise-tracker";
 
 import NewsArticle from '../../components/NewsArticle';
 import LoadingNewsArticle from '../../components/Shimmer/LoadingNewsArticle';
@@ -12,25 +13,20 @@ const News = ({ isLoading }) => {
 
   // if true, uses dummy data from a js file
   const development = false;
-
   const apiKey = process.env.REACT_APP_API_TOKEN;
   const url = `https://api.currentsapi.services/v1/search?keywords=Virtual%20Reality&language=en&apiKey=${apiKey}`;
-
+  let req = new Request(url);
 
   // don't make the api call outside useEffect (rendering loop will consume API requests!)
   useEffect(() => {
-    if (!development) {
-      var req = new Request(url);
+    trackPromise(
       fetch(req)
       .then(res => res.json())
       .then(data => setVrNews(data.news))
       .catch(error => {
         console.log(error);
         setVrNews(newsDummyData);
-      });
-    } else {
-      setVrNews(newsDummyData);
-    }
+      }));
   }, []);
 
   return (
@@ -40,8 +36,9 @@ const News = ({ isLoading }) => {
       </div>
       <main className="home__news">
         {
-          isLoading ? <LoadingNewsArticle/> : vrNews.map(newsData => <NewsArticle key={newsData.id} data={newsData}/>)
+          vrNews.map(newsData => <NewsArticle key={newsData.id} data={newsData}/>)
         }
+        <LoadingNewsArticle/> 
       </main>
     </section>
   )
